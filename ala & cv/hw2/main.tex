@@ -26,7 +26,127 @@
 \begin{document}
 \maketitle
 
-\section{}
+\section{Cartesian Form}
+\subsection{a)}
+\begin{align*}
+	e^z &= e^{x+iy}\\
+	&= e^x e^{iy}\\
+	&= e^x \left( \cos{(y)} + i\sin{(y)}\right) \\
+	&= e^x \cos{(y)} + i e^x \sin{(y)}\\
+\end{align*}
+
+\boxed{X = e^x \cos{(y)}, Y = e^x \sin{(y)}}
+
+\subsection{b)}
+
+Let $z = x+iy, w = a+ib$. Addition and multiplication are commutative, so we can rearrange to get the real together, and the imaginaries together.
+\begin{align*}
+	e^z * e^w &= e^{a+ib} * e ^{x+iy}\\
+	&= e^a * e^ib * e^x * e^iy\\
+	&= e^{ax} * e^{i(b+y)}\\
+	&= e^{a + ib + x + iy}\\
+	&= e^{z+w}
+\end{align*}
+
+\subsection{c)}
+Show $e^{2\pi i n} = +1$
+\begin{align*}
+	e^{2\pi i n} &= \left( e^{2\pi i}\right)^n\\
+	&= \left( \cos{2\pi} + i\sin{2\pi}\right)^n\\
+	&= \left( 1  i * 0\right)^n\\
+	&= 1^n\\
+	&= +1\\
+	&\qed
+\end{align*}
+
+Show $e^z$ is periodic with period $2\pi i$: $e^{z+2\pi i n} = e^z$
+\begin{align*}
+	e^{z + 2\pi i n} &= e^z * e^{2\pi i n}\\
+	&= e^z * \left(e^{2\pi i}\right)^n\\
+	&= e^z \left(\cos{2\pi} + i\sin{2\pi}\right)^n\\
+	&= e^z \left(1 + 0\right)^n\\
+	&= e^z\\
+	&\qed
+\end{align*}
+
+\subsection{d)}
+Compute $\operatorname{Re}{(\ldots)}$, $\operatorname*{Im}{(\ldots)}$ of $e^{1+\pi i}, e^{3+i\pi/3}, e^{5+i\pi/4}$
+\begin{align*}
+	e^{x+iy} &= e^x e^{iy}\\
+	&= e^x \left( \cos{y} + i\sin{y}\right)\\
+	\operatorname{Re}{(e^{x+iy})} &= e^x \cos{y}\\
+	\operatorname{Im}{(e^{x+iy})} &= e^x \sin{y}
+\end{align*}
+\begin{enumerate}
+	\item $z = 1+i\pi \implies \operatorname{Re}{(e^z)} = -e, \operatorname{Im}{(e^z)} = 0$
+	\item $z = 3+i\pi/3 \implies \operatorname{Re}{(e^z)} = e^3/2, \operatorname{Im}{(e^z)} = e^3  * \sqrt{3}/2$
+	\item $z = 5+i\pi/4 \implies \operatorname{Re}{(e^z)} = e^5 * \sqrt{2}/2, \operatorname{Im}{(e^z)} = e^5 * \sqrt{2}/2$
+\end{enumerate}
+\newpage
+\section{Cosine and Sine}
+\subsection{a)}
+\begin{align*}
+	\cos{(x)} &= \frac{e^{ix}+e^{-ix}}{2}\\
+	&= \frac{\cos{(x)} + i\sin{(x)} + \cos{(-x)} + i\sin{(-x)} }{2}\\
+	&= \frac{2\cos{(x)}}{2} \tag*{$\cos{(-x)} = \cos{(x)}, \sin{(-x)} = \sin{(x)}$}\\
+	&= \cos{(x)}\\
+	&\qed
+\end{align*}
+\begin{align*}
+	\sin{(x)} &= \frac{e^{ix}-e^{-ix}}{2i}\\
+	&= \frac{\cos{(x)} + i\sin{(x)} - \cos{(-x)} - i\sin{(-x)} }{2i}\\
+	&= \frac{2i\sin{(x)}}{2i} \tag*{$\cos{(-x)} = \cos{(x)}, \sin{(-x)} = \sin{(x)}$}\\
+	&= \sin{(x)}\\
+	&\qed
+\end{align*}
+\subsection{b)}
+\begin{align*}
+	\cos{(2 + 3i)} &= \frac{e^{2+3i} + e^{-2-3i}}{2}\\
+	&= (1/2) \left(e^2(\cos{(3)} + i\sin{(3)}) + e^{-2}(\cos{(-3)} + i\sin{(-3)})\right)\\
+	&= (1/2) \left(e^2\cos{(3)} + ie^2\sin{(3)} + e^{-2}\cos{(-3)} + ie^{-2}\sin{(-3)}\right)\\
+	&= (1/2) \left( e^2\cos({3}) +e^{-2}\cos{(-3)} + i\left(e^2\sin{(3)} + e^{-2}\sin{(-3)}\right) \right)
+\end{align*}
+\begin{align*}
+	\sin{(2 + 3i)} &= \frac{e^{2+3i} - e^{-2-3i}}{2i}\\
+	&= (1/2i) \left(e^2(\cos{(3)} + i\sin{(3)}) - e^{-2}(\cos{(-3)} - i\sin{(-3)})\right)\\
+	&= (1/2i) \left(e^2\cos{(3)} + ie^2\sin{(3)} - e^{-2}\cos{(-3)} - ie^{-2}\sin{(-3)}\right)\\
+	&= (1/2i) \left( e^2\cos({3}) -e^{-2}\cos{(-3)} - i\left(e^2\sin{(3)} + e^{-2}\sin{(-3)}\right) \right)
+\end{align*}
+\subsection{c)}
+\begin{align*}
+	\cos{(z)} &= \cos{(x+iy)}\\
+	&= \frac{e^{i(x+iy)} + e^{i(-x-iy)}}{2}\\
+	&= \frac{e^{ix-y} + e^{y-ix}}{2}\\
+	&= \frac{e^{-y}\cos{(x)} + ie^{-y}\sin{(x)} + e^{y}\cos{(-x)} + ie^{y}\sin{(-x)}}{2}\\
+	&= \frac{e^{-y}\cos{(x)} + e^{y}\cos{(-x)} + ie^{-y}\sin{(x)} + ie^{y}\sin{(-x)}}{2}\\
+	&= \frac{e^{-y}\cos{(x)} + e^{y}\cos{(x)} + ie^{-y}\sin{(x)} - ie^{y}\sin{(x)}}{2}\\
+	&= \frac{\cos{(x)}\left(e^{-y}+ e^{y}\right) + i\sin{(x)}\left(e^{-y} - e^{y}\right)}{2}\\
+	&= \frac{\cos{(x)}\left(e^{-y}+ e^{y}\right) - i\sin{(x)}\left(e^{y} - e^{-y}\right)}{2}\\
+	&= \cos{(x)}\cosh{(y)} - i\sin{(x)}\sinh{(y)}\\
+	&\qed
+\end{align*}
+\subsection{d)}
+\begin{align*}
+	\sin{(z)} &= \sin{(x+iy)}\\
+	&= \frac{e^{i(x+iy)} - e^{i(-x-iy)}}{2i}\\
+	&= \frac{e^{ix-y} - e^{y-ix}}{2i}\\
+	&= \frac{e^{-y}\cos{(x)} + ie^{-y}\sin{(x)} - e^{y}\cos{(-x)} - ie^{y}\sin{(-x)}}{2i}\\
+	&= \frac{e^{-y}\cos{(x)} - e^{y}\cos{(-x)} + ie^{-y}\sin{(x)} - ie^{y}\sin{(-x)}}{2i}\\
+	&= \frac{e^{-y}\cos{(x)} - e^{y}\cos{(x)} + ie^{-y}\sin{(x)} + ie^{y}\sin{(x)}}{2i}\\
+	&= \frac{\cos{(x)}\left(e^{-y} - e^{y}\right) + i\sin{(x)}\left(e^{-y} + e^{y}\right)}{2i}\\
+	&= \frac{\cos{(x)}\left(e^{-y} - e^{y}\right) + i\sin{(x)}\left(e^{y} + e^{-y}\right)}{2i} * \frac{i}{i}\\
+	&= \frac{-i\cos{(x)}\left(e^{-y} - e^{y}\right) + \sin{(x)}\left(e^{y} + e^{-y}\right)}{2}\\
+	&= \frac{i\cos{(x)}\left(e^{y} - e^{-y}\right) + \sin{(x)}\left(e^{y} + e^{-y}\right)}{2}\\
+	&= i\cos{(x)}\sinh{(y)} + \sin{(x)}\cosh{(y)}\\
+	&\qed
+\end{align*}
+\newpage
+\section{Complex Trigonometric Identities}
+\subsection{a)}
+
+
+
+
 \end{document}
 
 
