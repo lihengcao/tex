@@ -13,20 +13,21 @@
 
 % \texorpdfstring{$k$}{k} math inside (sub)section label
 
-\pagestyle{fancy}
-\fancyhead[L]{Liheng Cao}
-% \fancyhead[C]{center}
-\fancyhead[R]{lc4241}
-
 
 \title{hw2}
 \author{Liheng Cao}
 % \date{Date}
+\pagestyle{fancy}
+\fancyhead[L]{Liheng Cao}
+% \fancyhead[C]{center}
+%\fancyhead[R]{lc4241}
+\fancyhead[R]{MA 3113}
+
 
 \begin{document}
 \maketitle
 
-\section{Cartesian Form}
+\section{}\hrule
 \subsection{a)}
 \begin{align*}
 	e^z &= e^{x+iy}\\
@@ -45,7 +46,8 @@ Let $z = x+iy, w = a+ib$. Addition and multiplication are commutative, so we can
 	&= e^a * e^ib * e^x * e^iy\\
 	&= e^{ax} * e^{i(b+y)}\\
 	&= e^{a + ib + x + iy}\\
-	&= e^{z+w}
+	&= e^{z+w}\\
+	&\qed
 \end{align*}
 
 \subsection{c)}
@@ -83,7 +85,7 @@ Compute $\operatorname{Re}{(\ldots)}$, $\operatorname*{Im}{(\ldots)}$ of $e^{1+\
 	\item $z = 5+i\pi/4 \implies \operatorname{Re}{(e^z)} = e^5 * \sqrt{2}/2, \operatorname{Im}{(e^z)} = e^5 * \sqrt{2}/2$
 \end{enumerate}
 \newpage
-\section{Cosine and Sine}
+\section{}\hrule
 \subsection{a)}
 \begin{align*}
 	\cos{(x)} &= \frac{e^{ix}+e^{-ix}}{2}\\
@@ -141,11 +143,186 @@ Compute $\operatorname{Re}{(\ldots)}$, $\operatorname*{Im}{(\ldots)}$ of $e^{1+\
 	&\qed
 \end{align*}
 \newpage
-\section{Complex Trigonometric Identities}
+\section{}\hrule
 \subsection{a)}
+\begin{align*}
+	\cos{(-z)} &= \frac{e^{-iz} + e^{--iz}}{2}\\
+	&= \frac{e^{iz} + e^{-iz}}{2}\\
+	&= \cos{(z)}\\
+	&\qed
+\end{align*}
+\begin{align*}
+	\sin{(-z)} &= \frac{e^{-iz} - e^{--iz}}{2}\\
+	&= -\frac{e^{iz} - e^{-iz}}{2}\\
+	&= -\sin{(z)}\\
+	&\qed
+\end{align*}
+\subsection{b)}
+\begin{align*}
+	\cos{(\pi/2 - z)} &= \frac{e^{i\pi/2 - iz} + e^{-i\pi/2 + iz}}{2}\\
+	&= \frac{\dfrac{e^{i\pi/2}}{e^{iz}} + \dfrac{e^{iz}}{e^{i\pi/2}}}{2}\\
+	&= (1/2) \dfrac{e^{i\pi} + e^{2iz}}{e^{iz+i\pi/2}}\\
+	&= (1/2) \left(\dfrac{e^{i\pi}}{e^{iz+i\pi/2}} +\dfrac{e^{2iz}}{e^{iz+i\pi/2}} \right)\\
+	&= (1/2) \left(e^{-iz+i\pi/2} + e^{iz-i\pi/2}\right)\\
+	&= (1/2) \left(e^{-iz}e^{i\pi/2} + e^{iz}e^{-i\pi/2}\right)\\
+	&= (1/2) \left(ie^{-iz} - ie^{iz}\right) \tag{$e^{i\pi/2} = i, e^{-i\pi/2} = -i$}\\
+	&= \dfrac{1}{2} \dfrac{i}{i} \left(ie^{-iz} - ie^{iz}\right)\\
+	&= \dfrac{1}{2i} \left(-e^{-iz} + e^{iz}\right)\\
+	&= \dfrac{1}{2i} \left(e^{iz} - e^{-iz}\right)\\
+	&= \sin{(z)}\\
+	&\qed
+\end{align*}
+\begin{align*}
+	\sin{(\pi/2-z)} &= \dfrac{e^{i\pi/2-iz} - e^{-i\pi/2 + iz}}{2i}\\
+	&= \dfrac{e^{i\pi/2}/e^{iz}-e^{iz}/e^{i\pi/2}}{2i}\\
+	&= \dfrac{\dfrac{e^{i\pi} - e^{2iz}}{e^{iz+i\pi/2}}}{2i}\\
+	&= \dfrac{e^{-iz+i\pi/2} - e^{iz-i\pi/2}}{2i}\\
+	&= \dfrac{ie^{-iz} + ie^{iz}}{2i}\\
+	&= \dfrac{e^{-iz} + e^{iz}}{2}\\
+	&= \cos{(z)}\\
+	&\qed
+\end{align*}
+\subsection{c)}
+\begin{align*}
+	\sin^2{(z)} + \cos^2{(z)} &= \left( \dfrac{e^{iz} - e^{-iz}}{2i}\right) ^2 + \left(\dfrac{e^{iz} + e^{-iz}}{2}\right)^2\\
+	&= \dfrac{e^{2iz} - 2 + e^{-2iz}}{-4} + \dfrac{e^{2iz} + 2 + e^{-2iz}}{4}\\
+	&= \dfrac{\cancel{e^{2iz}} - 2 + \cancel{e^{-2iz}}}{-4} + \dfrac{\cancel{e^{2iz}} + 2 + \cancel{e^{-2iz}}}{4}\\
+	&= \dfrac{1}{2} + \dfrac{1}{2}\\
+	&= 1\\
+	&\qed
+\end{align*}
+\subsection{d)}
+\begin{align*}
+	\cos{(2z)} &= \dfrac{e^{2iz} + e^{-2iz}}{2}\\
+	&= 1 - 2\sin{(z)}^2\\
+	&= 1 - 2 \left(\dfrac{e^{iz} - e^{-iz}}{2i}\right)^2\\
+	&= 1 - 2 \left(\dfrac{e^{2iz} - 2 + e^{-2iz}}{-4}\right)\\
+	&= 1 + \left(\dfrac{e^{2iz} - 2 + e^{-2iz}}{2}\right)\\
+	&= \cancel{1} + \left(\dfrac{e^{2iz} - \cancel{2} + e^{-2iz}}{2}\right)\\
+	&= \dfrac{e^{2iz} + e^{-2iz}}{2}
+	&= \cos{(2z)}\\
+	&\qed
+\end{align*}
+\newpage
+\section{}\hrule
+Let $n\in\mathbb{Z}$
 
+$z = 1 + i\sqrt{3} = 2e^{i\pi/3}$
 
+$w = -1 + i = \sqrt{2}e^{i3\pi/4}$
 
+$\operatorname{Log}{(z)} = \operatorname{Log}{(2)} + i\pi/3$
+
+$\log{(z)} = \operatorname{Log}{(z)} + 2\pi i n$
+
+$\operatorname{Log}{(w)} = \operatorname{Log}{(\sqrt{2})} + i3\pi/4$
+
+$\log{(w)} = \operatorname{Log}{(w)} + 2\pi i n$
+
+The difference is that $\operatorname{Log}$ has an unique solution, while $\log$ has infinitely many solutions.
+\newpage
+\section{}\hrule
+\begin{align*}
+	i^{1+i} &= \left(e^{i\pi/2}\right)^{1+i}\\
+	&= e^{i\pi/2 * (1+i)}\\
+	&= e^{i\pi/2 - \pi/2}\\
+	&= \dfrac{e^{i\pi/2}}{e^{\pi/2}}\\
+	&= \dfrac{i}{e^{\pi/2}}\\
+	&= ie^{-\pi/2}\\
+	&\qed
+\end{align*}
+\newpage
+\section{}\hrule
+Let $ A = e^{iz} $
+
+$\arctan{(2+i)}$
+
+\begin{align*}
+	\tan{(z)} &= 2+i\\
+	\dfrac{\sin{(z)}}{\cos{(z)}} &= 2 + i\\
+	\cancel{1/2 *\dfrac{1}{1/2}}  *1/i * \dfrac{e^{iz} - e^{-iz}}{e^{iz}+e^{-iz}} &= 2+i\\
+	1/i \dfrac{A-A^{-1}}{A + A^{-1}} &= 2+i \tag{$A=e^{iz}$}\\
+	\dfrac{A-A^{-1}}{A + A^{-1}} &= 2i-1\\
+	A - A^{-1} &= (2i-1)\left(A+A^{-1}\right)\\
+	A^2 - 1 &= (2i-1)\left(A^2+1\right)\\
+	A^2 - 1 &= 2iA^2 + 2i -A^2 -1\\
+	2A^2 -2iA^2 &= 2i\\
+	A^2(2-2i) &= 2i\\
+	A^2 &= \dfrac{i}{1-i}\\
+	2 \log{(e^{iz})} &= \log{(i)} - \log{(1-i)}\\
+	2iz &= \log{(e^{i\pi/2})} - \log{(\sqrt{2}e^{-i\pi/4})}\\
+	&= i\pi/2 - \log{(\sqrt{2})} +i\pi/4\\
+	z  &= \dfrac{i\pi/2 - \log{(\sqrt{2})} +i\pi/4}{2i}\\
+	&= \dfrac{i3\pi/4 - \log{(\sqrt{2})}}{2i}\\
+	&= \boxed{\dfrac{3\pi/4 + i\log{(\sqrt{2})}}{2}}
+\end{align*}
+
+$ \arccos{\left(\dfrac{e^2+e^{-2}}{2}\right)} $
+\begin{align*}
+	\cos{(z)} &= \dfrac{e^2+e^{-2}}{2}\\
+	\dfrac{A + A^{-1}}{2} &= \tag{$A=e^{iz}$}\\
+	A^2 + 1 &= A \left(e^2 + e^{-2}\right)\\
+	A^2 - A\left(e^2 + e^{-2}\right) + 1 &= 0\\
+	A &= e^2, e^{-2}\\
+	e^{iz} &= \\
+	iz &= 2, -2\\
+	z &= \boxed{2i, -2i}
+\end{align*}
+\newpage
+\section{}\hrule
+\subsection{a)}
+$\diffp{u}{x} = \diffp{v}{y} \land \diffp{u}{y} = -\diffp{v}{x}$ 
+\subsection{b)}
+$f(z)$ is analytic if $f'(z)$ exists.
+\subsection{c)}
+If the 4 partials are continuous and the Cauchy-Riemann equations are satisfied, then the function is analytic.
+\subsection{d)}
+$ f'(z) = u_x(x,y) + iv_x(x,y) $, where subscripts are the shorthand for partial differentiation.
+\newpage
+\section{}\hrule
+\subsection{a)}
+$ u(x,y) = u = e^x \cos{(y)}, v(x,y) = v = e^x \sin{(y)} $
+
+$u_x = e^x \cos{(y)} = v_y, u_y = -e^x \sin{(y)} = -v_x$
+
+$ f'(z) = u_x + iv_x = e^x\cos{(y)} + ie^x \sin{(y)} = e^z $
+
+\subsection{b)}
+
+$ u = \sin{(x)}\cosh{(y)}, v = \cos{(x)}\sinh{(y)}$
+
+$u_x = \cos{(x)}\cosh{(y)} = v_y, u_y = \sin{(x)}\sinh{(y)} = -v_x$
+
+$ f'(z) = u_x + iv_x = \cos{(x)}\cosh{(y)} + i\sin{(x)}\sinh{(y)} = \cos{(z)} $
+\newpage
+\section{}\hrule
+\subsection{a)}
+$ u_x = 3Ax^2 + By^2 + C = Dx^2 + 3Ey^2 + F = v_y, u_y = 2Bxy = -2Dxy = -v_x$
+
+Since these 4 partials are polynomials with real coefficients, we know that they are continuous. After matching the terms up, we get $f(z)$ is analytic when $ 3A = D \land B = 3E \land C = F \land B = -D$.
+
+\subsection{b)}
+By setting $ y=0 \implies z = x $, we get 
+\[ f(z) = Az^3 + Dz^2 + Bx + C\]
+
+\subsection{c)}
+\[f'(z) = 3Az^2 + 2Dz + B\]
+\newpage
+\section{}\hrule
+\subsection{a)}
+\[u_x = -e^{-y}\sin{(x)} = v_y, u_y = -e^{-y}\cos{(x)} = -v_x\]
+These 4 partials are continuous because they are the product of 2 continuous functions.
+\subsection{b)}
+\[g'(z) = -e^{-y}\sin{(x)} + ie^{-y}\cos{(x)}\]
+\subsection{c)}
+\[g(z) = e^{-y+ix} = e^{i(x+iy)} = e^{iz}\]
+\subsection{d)}
+
+Verify $ u_{xx} + u_{yy} = 0 $
+
+\[u_x = -e^{-y}\sin{(x)} \implies u_{xx} = -e^{-y}\cos{(x)}\]
+\[u_y = -e^{-y}\cos{(x)} \implies u_{yy} = e^{-y}\cos{(x)}\]
+\[u_{xx} + u_{yy} = 0\]
 
 \end{document}
 
