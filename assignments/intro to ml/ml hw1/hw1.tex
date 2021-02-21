@@ -1,0 +1,174 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1in, bottom=0.75in, left=0.75in, right=0.75in, headheight=15pt]{geometry}
+\usepackage{amsmath, amssymb, amsthm, graphicx, hyperref, enumerate, multirow,  multicol, tikz, centernot, cancel, forest, lipsum, mathtools, bm, esvect, fancyhdr, esdiff, float, parskip, comment, listings}
+
+\DeclareMathSymbol{*}{\mathbin}{symbols}{"01} % change * to /cdot inside math
+% \begingroup % let only this align, etc. break across pages
+% \allowdisplaybreaks
+% \begin{align}
+%     ....
+% \end{align}
+% \endgroup
+
+% \texorpdfstring{$k$}{k} math inside (sub)section label
+
+\pagestyle{fancy}
+\fancyhead[L]{Liheng Cao}
+% \fancyhead[C]{center}
+\fancyhead[R]{CS4563}
+
+
+\title{hw1}
+\author{Liheng Cao}
+% \date{Date}
+
+\begin{document}
+\maketitle
+
+\section{}\hrule
+\subsection*{(a)}
+This is regression because salary is a continuous variable. $N = 500, d = 3$
+
+\subsection*{(b)}
+The is classification because the 2 possible outcomes are ``success" or ``failure". $N = 20, d = 14$
+\newpage
+
+\section{}\hrule
+\subsection*{(a)}
+\begin{enumerate}
+	\item Given previous stock history, we could classify whether to buy, sell, or hold (not do anything) the stock. The features would be previous stock prices, and the target would be buy, sell, or hold. If we were to build a more advanced model, we could also include stuff like positive or negative media attention. 
+	
+	\item We could predict whether or not we will have a snow day (too much snow so school is canceled) given predicted snowfall, temperature, and whether or not school was canceled before for a certain amount of snowfall and temperature. The target would be YES snowday or NO snowday, and the features would be snowfall and temperature.
+	
+	\item We could classify handwritten characters. The target would be what character it is (we could specify to just number or also include the latin alphabet), and the features would be a matrix representation of a picture of the character.
+\end{enumerate}
+\subsection*{(b)}
+\begin{enumerate}
+	\item We could predict what exam score we get based on how many hours we study for it. The target would be the score, while the feature would be how much time we spent studying.
+	
+	\item We could try to predict how long we have to wait at a traffic light. The target would be how long we have to wait before green, while the features could be time of day, day of week, the color of the light when we arrived, and perhaps how long we've already waited.
+	
+	\item We could use regression to predict how long it would take a battery to be fully charged. The target is the time from 0 to 100\%, while the features would be battery capacity, charge ``power", the ambient and battery temperature (for battery chemistry), and whether or not the device is currently in use.
+\end{enumerate}
+\newpage
+
+\section{}\hrule
+\subsection{a)}
+A possible target would be GPA.
+
+\subsection{b)}
+Continuous
+
+\subsection{c)}
+\begin{enumerate}
+	\item GPA in high school
+	
+	\item Test scores (ACT, SAT, etc.)
+\end{enumerate}
+
+\subsection{d)}
+It would be a good start. The slope would be positive, as it's reasonable to expect someone that did well in high school to do well in college.
+\newpage
+\section{}
+\subsection{a)}
+\[ \bar{x} = 2, \bar{y} = 6 \]
+
+\subsection{b)}
+\[ s_{xx} = \dfrac{1}{5}\sum\limits_{i=0}^{5} \left(\bar{x} - x^{(i)}\right)^2 = 2\]
+\[ s_{yy} = \dfrac{1}{5}\sum\limits_{i=0}^{5} \left(\bar{y} - y^{(i)}\right)^2 = 37.2\]
+\[ s_{xy} = \dfrac{1}{5}\sum\limits_{i=0}^{5} \left( x^{(i)} - \bar{x}\right) \left( y^{(i)} - \bar{y} \right) = 8\]
+
+\subsection{c)}
+\[ w_1 = \dfrac{s_{xy}}{x_{xx}} = 4\]
+\[ w_0 = \bar{y}-w_1\bar{x} = -2 \]
+\[ y \approx -2 + 4x \]
+
+\subsection{d)}
+\[ \hat{y} = -2 + 4*2.5 = 8 \]
+
+\subsection{e)}
+\[ \dfrac{1}{N} \sum\limits_{i=0}^{N} \left(w_0 + w_1x^{(i)} - y^{(i)}\right)^2 = 26 \]
+
+\subsection{f)}
+\[ R^2 = 1- \dfrac{RSS}{\sum\limits_{i=1}^{N} \left(y^{(i) - \bar{y}}\right)^2} = 0.86\ldots \]
+
+\subsection{g)}
+If $17$ was swapped for $15$, then $w_0$ would increase slightly from $-2$ to $-1.4$. $w_1$ would decrease slightly from $4$ to $3.6$.
+
+If $ 17 $ was swapped for $ 9 $, then $w_0$ would increase drastically from $-2$ to $-0.4$. $w_1$ would decrease drastically from $4$ to $2.4$.
+\newpage
+
+\section{}
+\[ t_0 = w_0 - 0.1 / 5 * \sum\limits_{i=0}^{5} w_0 + w_1*x^{(i)} - y^{(i)} \]
+\[ t_1 = w_1 - 0.1 /5 *  \sum\limits_{i=0}^{5} x^{(i)} \left(w_0 + w_1*x^{(i)} - y^{(i)}\right) \]
+\begin{enumerate}
+	\item 
+	\[ t_0 = 0 - 0.1 / 5 * \sum\limits_{i=0}^{5} 0 +0*x^{(i)} - y^{(i)} = 1/50 * \bar{y}*N = 0.6  \]
+	\[ t_1 = 0 - 0.1 /5 *  \sum\limits_{i=0}^{5} x^{(i)} \left(0 + 0*x^{(i)} - y^{(i)}\right) = 1/50 \sum\limits_{i=0}^{5} x^{(i)}y^{(i)} = 2\]
+	\[ w_0 = t_0 = 0.6, w_1 = t_1 = 2\]
+	
+	\item 
+	\[ t_0 = 0.6 - 0.1 / 5 * \sum\limits_{i=0}^{5} 0.6 + 2*x^{(i)} - y^{(i)} = 0.74\]
+	\[ t_1 = 2 - 0.1 /5 *  \sum\limits_{i=0}^{5} x^{(i)} \left(0.6 + 2*x^{(i)} - y^{(i)}\right) =2.68\]
+	\[ w_0 = t_0 = 0.74, w_1 = t_1 = 2.68\]
+\end{enumerate}
+\newpage
+
+\section{}
+We just need to see which one has the smallest error function, which is RSS in this case.
+\begin{enumerate}[a)]
+	\item $\sum\limits_{i=0}^{5} \left(-1 + 4*x^{(i)} - y^{(i)}\right)^2 = 3.1$
+	\item $\sum\limits_{i=0}^{5} \left(-2 + 4*x^{(i)} - y^{(i)}\right)^2 = 2.6$
+	\item $\sum\limits_{i=0}^{5} \left(-2 + 3*x^{(i)} - y^{(i)}\right)^2 = 5.6$
+\end{enumerate}
+Option B is the most likely since it has the smallest error function.
+\newpage
+
+\section{}
+\subsection{a)}
+\begin{align*}
+	z(t) &= z_0 e^{-at}\\
+	\log{(z(t))} &= \log{(z_0)} - at \log{(e)}\\
+	&= \boxed{\log{(z_0)} - at}
+\end{align*}
+
+\subsection{b)}
+Let $ y = \log{(z(t))}, w_0 = \log{(z_0)}, a = -w_1, x = t$. We then sub in the variance and covariance.
+
+\[ a = -\dfrac{\sum\limits_{i=0}^{5} \left( t^{(i)} - \bar{t}\right) \left( \log{(z(t)^{(i)})} - \overline{\log{(z(t))}} \right)}{\sum\limits_{i=0}^{5} \left(\bar{t} - t^{(i)}\right)^2}\]
+\[ z_0 = \exp{\left(\overline{\log{(z(t))}}+a\bar{t}\right)} \]
+
+\subsection{c)}
+\lstset{language=Python}
+\begin{lstlisting}
+	import numpy as np
+	
+	t = ... # get the data here as a np array
+	z = ... # get the data here as a np array
+	
+	t_bar = t.mean()
+	z_bar = z.mean()
+	
+	a = -1 * ((t-t_bar)(np.log(z) - np.log(z_bar))).sum()/((t_bar-t)**2).sum()
+	z_0 = np.exp(np.log(z_bar) + a*t_bar)
+\end{lstlisting}
+\newpage
+
+\section{}
+\subsection{a)}
+\[ \operatorname{RSS} = \sum\limits_{i=0}^{N} \left(wx^{(i)} - y^{(i)}\right)^2\]
+
+\subsection{b)}
+\begin{align*}
+	\operatorname{RSS} &= \sum\limits_{i=0}^{N} \left(wx^{(i)} - y^{(i)}\right)^2\\
+	\operatorname{RSS}' &= \sum\limits_{i=0}^{N} 2x^{(i)}\left(wx^{(i)} - y^{(i)}\right)\\
+	\sum\limits_{i=0}^{N} 2x^{(i)}\left(wx^{(i)} - y^{(i)}\right) &= 0 \tag{Set derivative to 0}\\
+	\sum\limits_{i=0}^{N} w\left(x^{(i)}\right)^2 - x^{(i)}y^{(i)} &= 0\\
+	\sum\limits_{i=0}^{N} w\left(x^{(i)}\right)^2 &= \sum\limits_{i=0}^{N} x^{(i)}y^{(i)}\\
+	w &= \dfrac{\sum\limits_{i=0}^{N} x^{(i)}y^{(i)}}{\sum\limits_{i=0}^{N} \left(x^{(i)}\right)^2}
+\end{align*}
+
+\end{document}
+
+
