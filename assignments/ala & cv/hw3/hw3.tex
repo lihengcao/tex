@@ -1,0 +1,144 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1in, bottom=0.75in, left=0.75in, right=0.75in, headheight=15pt]{geometry}
+\usepackage{amsmath, amssymb, amsthm, graphicx, hyperref, enumerate, multirow,  multicol, tikz, centernot, cancel, forest, lipsum, mathtools, bm, esvect, fancyhdr, esdiff, float, parskip, comment}
+
+\DeclareMathSymbol{*}{\mathbin}{symbols}{"01} % change * to /cdot inside math
+% \begingroup % let only this align, etc. break across pages
+% \allowdisplaybreaks
+% \begin{align}
+%     ....
+% \end{align}
+% \endgroup
+
+% \texorpdfstring{$k$}{k} math inside (sub)section label
+
+\pagestyle{fancy}
+\fancyhead[L]{Liheng Cao}
+% \fancyhead[C]{center}
+\fancyhead[R]{}
+
+\title{hw3}
+\author{Liheng Cao}
+% \date{Date}
+
+\begin{document}
+\maketitle
+
+\section{}
+\begin{align*}
+	\left(-1-\sqrt{3}i\right)^{432} &= \left(2e^{-2i\pi/3}\right)^{432}\\
+	&= 2^{423}e^{-2i\pi/3 * 432}\\
+	&= 2^{423}e^{-288i\pi}\\
+	&\qed
+\end{align*}
+\newpage
+
+\section{}
+\begin{align*}
+	\left(-1-i\right)^{1/737} &= \left(\sqrt{2}e^{-3i\pi/4}\right)^{1/737}\\
+	&= 2^{1/(2 * 737)} e^{-3i\pi/(4*737)}e^{2i\pi n/737}, n \in \{0, 1, \ldots, 736\}\\
+	&= 2^{1/(2 * 737)} \left(\cos{(-3\pi/(4*737) + 2\pi n/737)} + i\sin{(-3\pi/(4*737)+ 2\pi n/737)}\right)\\
+	&\qed
+\end{align*}
+\newpage
+
+\section{}
+\begin{align*}
+	\left(1-\sqrt{3}i\right)^{\left(5+7i\right)} &= \left(2e^{i\pi/3}\right)^{5+7i}\\
+	&= (\operatorname{Log}{(2)} - i\pi/3 + 2i\pi n)^{5+7i} \\
+	&= e^{(\operatorname{Log}{(2)} - i\pi/3 + 2i\pi n)(5+7i)} \\
+	&= e^{5\operatorname{Log}{(2)} - 5i\pi/3 +10i\pi n + 7i\operatorname{Log}{(2)} +7\pi/3 - 14\pi n}\\
+	&= e^{5\operatorname{Log}{(2)} - 7\left(-\pi/3 + 2\pi n\right)} e^{i(7\operatorname{Log}{(2)} + 5\left(-\pi/3 + 2\pi n\right))} \\
+	&= e^{5\operatorname{Log}{(2)} - 7\left(-\pi/3 + 2\pi n\right)} \left(\cos{(7\operatorname{Log}{(2)} + 5\left(-\pi/3 + 2\pi n\right))} + i\sin{(7\operatorname{Log}{(2)} + 5\left(-\pi/3 + 2\pi n\right))}\right)\\
+	&\qed
+\end{align*}
+\newpage
+
+\section{}
+\subsection{}
+\begin{align*}
+	\cos{(z)} &= \dfrac{e^{iz} + e^{-iz}}{2}
+\end{align*}
+
+\subsection{}
+\begin{align*}
+	\sin{(z)} &= \dfrac{e^{iz} - e^{-iz}}{2i}
+\end{align*}
+
+\subsection{}
+\begin{align*}
+	\tan{(z)} &= 1/i\dfrac{e^{iz} - e^{-iz}}{e^{iz} + e^{-iz}}
+\end{align*}
+\newpage
+
+\section{}
+\begin{align*}
+	\cos{(4+3i)} &= \dfrac{e^{4i-3} + e^{3-4i}}{2}\\
+	&= (1/2) \left(e^{4i}e^{-3} + e^{3}e^{-4i}\right)\\
+	&= (1/2) \left(e^{-3}\left(\cos{(4)} + i\sin{(4)}\right) + e^{3}\left(\cos{(-4)} + i\sin{(-4)}\right)\right)\\
+	&= (1/2) \left(\cos{(4)}\left(e^{3}-^{e-3}\right) + \sin{(4)}\left(e^{3}-e^{-3}\right)\right)\\
+	&= cos{(4)}\sinh{(3)} + \sin{(3)}\cosh{(3)}\\
+	&\qed
+\end{align*}
+\[ \operatorname{Re}{(\cos{(4+3i)})} = \cos{(4)}\sinh{(3)} + \sin{(3)}\cosh{(3)}\]
+\[ \operatorname{Im}{(\cos{(4+3i)})} = 0 \]
+\newpage
+
+\section{}
+\begin{align*}
+	4\cos^3{(T)} &= \cos{(3T)} + 3\cos{(T)}\\
+	\cos{(3T)} + 3\cos{(T)} &= 4\cos^3{(T)}\\
+	&= 4 \left(\dfrac{e^{iT} + e^{-iT}}{2}\right)^{3}\\
+	&= (1/2) \left(e^{3iT} + 3e^{2iT} e^{-iT} + 3e^{iT}e^{-2iT} + e^{-3iT}\right) \tag{Binomial Expansion} \\
+	&= (1/2) \left(e^{3iT} + 3e^{iT} + 3e^{-iT} + e^{-3iT}\right)\\
+	&= \cos{(3T)} + 3\cos{(T)}\\
+	&\qed
+\end{align*}
+\newpage
+
+\section{}
+\begin{align*}
+	\tan{(z)} &= \dfrac{2-i}{5}\\
+	(1/i) \dfrac{A-A^{-1}}{A+A^{-1}} &= \dfrac{2-i}{5} \tag{A = exp(iz)}\\
+	\dfrac{A-A^{-1}}{A+A^{-1}} &= \dfrac{2i+1}{5}\\
+	\dfrac{A^2-1}{A^2+1} &= \dfrac{2i+1}{5}\\
+	A^2 - 1 &= (A^2+1)\dfrac{2i+1}{5}\\
+	A^2 - 1 &= (1/5) \left(2iA^2+A^2 + 2i + 1\right)\\
+	5A^2 -5 &= 2iA^2+A^2 + 2i + 1\\
+	5A^2 - 2iA^2 -A^2 &= 2i + 6\\
+	4A^2 - 2iA^2 &= 2i + 6\\
+	A^2\left(4-2i\right) &= 2i + 6\\
+	A^2 &= \dfrac{2i+6}{4-2i}\\
+	A^2 &= 1+i \tag{Hint}\\
+	e^{2iz} &= \sqrt{2}e^{i\pi/4}\\
+	2iz &= \operatorname{Log}{(2)} + i\pi/4 + 2i\pi n, n\in\mathbb{Z}\\
+	z &= (1/2i) \operatorname{Log}{(2)} + \pi/8 + \pi n\\
+	&\qed
+\end{align*}
+\newpage
+
+\section{}
+\subsection{a)}
+\[\diffp{u}{x} = \diffp{v}{y} \land \diffp{u}{y} = -\diffp{v}{x}\]
+\[\diff{f}{z} = \diffp{u}{x} + i\diffp{v}{x}\]
+
+\subsection{b)}
+\[f(z) = (Ax^2 + Cy^2 + Dx + F) + i(Bxy + Ey)\]
+Match partials of the Cauchy-Riemann equations:
+\[\diffp{u}{x} = \diffp{v}{y} \land \diffp{u}{y} = -\diffp{v}{x}\]
+\[\diffp{u}{x} = 2Ax + D = \diffp{v}{y} = Bx + E \land \diffp{u}{y} = 2Cy -\diffp{v}{x} -By\]
+\[B = 2A = -2C\land D = E\]
+
+\subsection{c)}
+\[\diff{f}{z} = \diffp{u}{x} + i\diffp{v}{x}\]
+\[\diff{f}{z} = 2Ax + D + 2iCy\]
+
+\subsection{d)}
+Use the $ y=0 $ trick:
+\[f(z) = (Ax^2 + Dx + F)\]
+\[f(z) = Az^2 + Dz + F\]
+
+
+\end{document}
+
