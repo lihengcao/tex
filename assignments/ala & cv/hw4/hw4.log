@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  5 MAR 2021 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  5 MAR 2021 21:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**hw3.tex
-(./hw3.tex
+**hw4.tex
+(./hw4.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-06>
 (d:/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -898,8 +898,8 @@ Package: parskip 2020-06-15 v2.0f non-zero parskip adjustments
 (d:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write5
 
-Excluding comment 'comment') (./hw3.aux)
-\openout1 = `hw3.aux'.
+Excluding comment 'comment') (./hw4.aux)
+\openout1 = `hw4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
@@ -929,14 +929,14 @@ LaTeX Font Info:    ... okay on input line 25.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(54.2025pt, 505.89pt, 54.2025pt)
-* v-part:(T,H,B)=(72.26999pt, 668.4975pt, 54.2025pt)
+* v-part:(T,H,B)=(54.2025pt, 686.56499pt, 54.2025pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=505.89pt
-* \textheight=668.4975pt
+* \textheight=686.56499pt
 * \oddsidemargin=-18.06749pt
 * \evensidemargin=-18.06749pt
-* \topmargin=-40.0pt
+* \topmargin=-58.06749pt
 * \headheight=15.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -993,9 +993,9 @@ LaTeX Info: Redefining \ref on input line 25.
 LaTeX Info: Redefining \pageref on input line 25.
 LaTeX Info: Redefining \nameref on input line 25.
 
-(./hw3.out) (./hw3.out)
+(./hw4.out) (./hw4.out)
 \@outlinefile=\write6
-\openout6 = `hw3.out'.
+\openout6 = `hw4.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
 
@@ -1014,20 +1014,16 @@ LaTeX Font Info:    Trying to load font information for U+esvect on input line
 File: uesvect.fd 
 ) [1
 
-{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (47.12997pt too wide) detected at line 55
-[]
- []
-
-[3] [4] [5] [6] [7] [8] (./hw3.aux)
-Package rerunfilecheck Info: File `hw3.out' has not changed.
-(rerunfilecheck)             Checksum: 7DA8498DBC8E89F65A4BE91C832A8809;713.
+{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+ [6] (./hw4.aux)
+Package rerunfilecheck Info: File `hw4.out' has not changed.
+(rerunfilecheck)             Checksum: C8F530A0083FABAB830BAAFCE87DB7BF;495.
  ) 
 Here is how much of TeX's memory you used:
- 31271 strings out of 479302
- 671530 string characters out of 5871205
- 1132956 words of memory out of 5000000
- 47934 multiletter control sequences out of 15000+600000
+ 31262 strings out of 479302
+ 671391 string characters out of 5871205
+ 1133959 words of memory out of 5000000
+ 47928 multiletter control sequences out of 15000+600000
  417619 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,11n,89p,1579b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1038,12 +1034,11 @@ st/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2020/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr17.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw3.pdf (8 pages, 100613 bytes).
+pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on hw4.pdf (6 pages, 89750 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

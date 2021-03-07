@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[top=0.75in, bottom=0.75in, left=0.75in, right=0.75in, headheight=15pt]{geometry}
+\usepackage{amsmath, amssymb, amsthm, graphicx, hyperref, enumerate, multirow,  multicol, tikz, centernot, cancel, forest, lipsum, mathtools, bm, esvect, fancyhdr, esdiff, float, parskip, comment}
+
+\DeclareMathSymbol{*}{\mathbin}{symbols}{"01} % change * to /cdot inside math
+% \begingroup % let only this align, etc. break across pages
+% \allowdisplaybreaks
+% \begin{align}
+%     ....
+% \end{align}
+% \endgroup
+
+% \texorpdfstring{$k$}{k} math inside (sub)section label
+
+\pagestyle{fancy}
+\fancyhead[L]{Liheng Cao}
+% \fancyhead[C]{center}
+\fancyhead[R]{}
+
+\title{hw4}
+\author{Liheng Cao}
+% \date{Date}
+
+\begin{document}
+\maketitle
+
+\section{}
+All 4 of the integrals are equal to \fbox{zero}. None of them have singularities inside the curve of integration, and the Cauchy-Goursat Theorem tells us that an integral on a simple closed path is equal to zero if the interior is continuously differentiable (no singularities).
+\newpage
+
+\section{}
+\begin{enumerate}[a)]
+	\item $ z=-1 $
+	
+	\item $ z = 0, 1 $
+	
+	\item $ z = 0 $
+	
+	\item $ z = \pm{i} $
+\end{enumerate}
+\newpage
+
+\section{}
+\begin{enumerate}[a)]
+	\item \[ H(z) = z^2 \implies \dfrac{z^2}{z-(-1)} \implies z^2\Bigg|_{z=-1} = \boxed{1}\]
+	
+	\item \[ H(z) = \dfrac{z^2+3z+1}{z} \implies \dfrac{\dfrac{z^2+3z+1}{z}}{z-(-1)} \implies \dfrac{z^2+3z+1}{z}\Bigg|_{z=-1}= \boxed{1} \]
+	\[ H(z) = \dfrac{z^2+3z+1}{z-1} \implies \dfrac{\dfrac{z^2+3z+1}{z-1}}{z-0} \implies \dfrac{z^2+3z+1}{z-1}\Bigg|_{z=0}= \boxed{-1} \]
+	
+	\item \[ H(z) = \cos{(z)} \implies \dfrac{\cos{(z)}}{z} \implies \cos{(z)}\Bigg|_{z=0} = \boxed{1}\]
+	
+	\item \[ H(z) = \dfrac{e^z}{z-i} \implies \dfrac{\dfrac{e^z}{z-i}}{z-(-i)} \implies \dfrac{e^z}{z-i}\Bigg|_{z=-i}= \boxed{\dfrac{e^{-i}}{-2i}}\]
+	
+	\[ H(z) = \dfrac{e^z}{z+i} \implies \dfrac{\dfrac{e^z}{z+i}}{z-i} \implies \dfrac{e^z}{z+i}\Bigg|_{z=i}= \boxed{\dfrac{e^i}{2i}}\]
+\end{enumerate}
+\newpage
+
+\section{}
+The singularities are at $ z = 0, 1, 2 $. Let's find all the residues first. 
+\[ \dfrac{\dfrac{z+1}{(z-1)(z-2)}}{z} \implies \dfrac{z+1}{(z-1)(z-2)}\Bigg|_{z=0} \implies 1/2 \]
+\[ \dfrac{\dfrac{z+1}{z(z-2)}}{z-1} \implies \dfrac{z+1}{z(z-2)}\Bigg|_{z=1} \implies -2 \]
+\[ \dfrac{\dfrac{z+1}{z(z-1)}}{z-2} \implies \dfrac{z+1}{z(z-1)}\Bigg|_{z=2} \implies 3/2 \]
+\subsection{Case I}
+We only need to worry about the singularity at $ z = 0 $, since $ z = 1,2 \not\in |z|=1/2 $ (the singularities at $ z=1,2 $ are not inside the current circle). Since the integral is about a circle of radius $ R $ (simple closed curve), the answer is just the residue at $ z = 0 $. The answer is \fbox{1/2}.
+
+\subsection{Case II}
+Sum up the residue at $ z = 0, 1 $. The answer is $ 1/2-2 = \boxed{-3/2} $.
+
+\subsection{Case III}
+Sum up the residue at $ z = 0, 1, 2 $. The answer is $ 1/2 - 2 +3/2 = \boxed{0} $.
+\newpage
+
+\section{}
+The Cauchy-Integral Theorem is \[ \oint\limits_{\gamma} f(z) \, dz = 0\]
+if $ \gamma $ is a simple closed path.
+\newpage
+
+\section{}
+s
+
+\end{document}
+
+

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  5 MAR 2021 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  7 MAR 2021 00:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**hw3.tex
-(./hw3.tex
+**"ml hw3.tex"
+(./ml hw3.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-06>
 (d:/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -898,8 +898,8 @@ Package: parskip 2020-06-15 v2.0f non-zero parskip adjustments
 (d:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write5
 
-Excluding comment 'comment') (./hw3.aux)
-\openout1 = `hw3.aux'.
+Excluding comment 'comment') (./ml hw3.aux)
+\openout1 = `"ml hw3.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
@@ -993,16 +993,18 @@ LaTeX Info: Redefining \ref on input line 25.
 LaTeX Info: Redefining \pageref on input line 25.
 LaTeX Info: Redefining \nameref on input line 25.
 
-(./hw3.out) (./hw3.out)
+(./ml hw3.out) (./ml hw3.out)
 \@outlinefile=\write6
-\openout6 = `hw3.out'.
+\openout6 = `"ml hw3.out"'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
 
- (d:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(d:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+
 
 (d:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1014,36 +1016,40 @@ LaTeX Font Info:    Trying to load font information for U+esvect on input line
 File: uesvect.fd 
 ) [1
 
-{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (47.12997pt too wide) detected at line 55
-[]
+{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+
+Overfull \hbox (15.0518pt too wide) detected at line 185
+\OT1/cmr/m/n/12 = [][] []
  []
 
-[3] [4] [5] [6] [7] [8] (./hw3.aux)
-Package rerunfilecheck Info: File `hw3.out' has not changed.
-(rerunfilecheck)             Checksum: 7DA8498DBC8E89F65A4BE91C832A8809;713.
+[6] [7] (./ml hw3.aux)
+Package rerunfilecheck Info: File `"ml hw3".out' has not changed.
+(rerunfilecheck)             Checksum: FED12652D3F2FEAB4C00FF7C53BE586E;245.
  ) 
 Here is how much of TeX's memory you used:
- 31271 strings out of 479302
- 671530 string characters out of 5871205
- 1132956 words of memory out of 5000000
- 47934 multiletter control sequences out of 15000+600000
- 417619 words of font info for 83 fonts, out of 8000000 for 9000
+ 31274 strings out of 479302
+ 671493 string characters out of 5871205
+ 1144959 words of memory out of 5000000
+ 47928 multiletter control sequences out of 15000+600000
+ 417956 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,11n,89p,1579b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
-<d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2020/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2020/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2020/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw3.pdf (8 pages, 100613 bytes).
+ 87i,14n,89p,1584b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<d:/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2020/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr17.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
+pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2020/texmf-dis
+t/fonts/type1/public/cm-super/sfrm1200.pfb><d:/texlive/2020/texmf-dist/fonts/ty
+pe1/public/esvect/vect10.pfb>
+Output written on "ml hw3.pdf" (7 pages, 112673 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 147 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 69 words of extra memory for PDF output out of 10000 (max. 10000000)
 

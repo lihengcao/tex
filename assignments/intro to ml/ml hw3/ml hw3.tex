@@ -1,0 +1,194 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1in, bottom=0.75in, left=0.75in, right=0.75in, headheight=15pt]{geometry}
+\usepackage{amsmath, amssymb, amsthm, graphicx, hyperref, enumerate, multirow,  multicol, tikz, centernot, cancel, forest, lipsum, mathtools, bm, esvect, fancyhdr, esdiff, float, parskip, comment}
+
+\DeclareMathSymbol{*}{\mathbin}{symbols}{"01} % change * to /cdot inside math
+% \begingroup % let only this align, etc. break across pages
+% \allowdisplaybreaks
+% \begin{align}
+%     ....
+% \end{align}
+% \endgroup
+
+% \texorpdfstring{$k$}{k} math inside (sub)section label
+
+\pagestyle{fancy}
+\fancyhead[L]{Liheng Cao}
+% \fancyhead[C]{center}
+\fancyhead[R]{}
+
+\title{Homework 3: Model Order Selection}
+\author{Liheng Cao}
+% \date{Date}
+
+\begin{document}
+\maketitle
+
+\section{}
+\begin{enumerate}[(a)]
+	\item 
+	\begin{enumerate} [(i)]
+		\item No. 
+		
+		\item There is no underfitting because the power of the model is higher than the true function.
+		
+		\item $ \vv{w} = [1, 2, 0] $ (bold and arrow used interchangeably)
+	\end{enumerate}
+
+	\item 
+	\begin{enumerate} [(i)]
+		\item No. 
+		
+		\item There is underfitting because the power of the model is lower than the true function.
+	\end{enumerate}
+
+	\item 
+	\begin{enumerate} [(i)]
+		\item Yes. The true function has $x_1, x_2$, but, according to the footnote, our example only has 1 feature.
+		
+		\item There is underfitting because the true function has the term $ x_1x_2 $, which the model lacks.
+	\end{enumerate}
+\end{enumerate}
+\newpage
+
+\section{}
+\begin{enumerate}[(a)]
+	\item \[ x_0 = 1, x_1 = \text{cancer volume}, x_2 = \text{patient's age}, x_3 = \text{type of cancer} \]
+	$ x_0 $ let's the $ x, w $ subscripts line up more, which looks better.
+	\begin{enumerate} [(Model 1)]
+		\item $ h(\textbf{x}) = w_0 + w_1x_1 $
+		
+		\item $ h(\textbf{x}) = w_0 + w_1x_1 + w_2x_2$
+		
+		\item $ h(\textbf{x}) = w_0 + (w_1 + x_3w_3)x_1 + w_2x_2$
+	\end{enumerate}
+
+	\item There are 2 and 3 parameters, respectively. Model 2 is the most complex out of the 2, however Model 3 is the \underline{most} complex.
+	
+	\item 
+	\begin{enumerate} [(Model 1)]
+		\item 
+		$X = \begin{bmatrix}
+			1 & 0.7 \\
+			1 & 1.3 \\
+			1 & 1.6 \\
+		\end{bmatrix}$
+		
+		\item 
+		$X = \begin{bmatrix}
+			1 & 0.7 & 55 \\
+			1 & 1.3 & 65 \\
+			1 & 1.6 & 70 \\
+		\end{bmatrix}$
+		
+		\item 
+		$X = \begin{bmatrix}
+			1 & 0.7 & 55 & 1 \\
+			1 & 1.3 & 65 & 0 \\
+			1 & 1.6 & 70 & 0 \\
+		\end{bmatrix}$
+	\end{enumerate}
+
+	\item Model 2 should be selected. It has similar numbers to Model 3, but Model 2 is a much simpler model. We want to avoid having an overly complicated model that doesn't even give us better numbers.
+\end{enumerate}
+\newpage
+
+\section{}
+A is probably underfitting; this is because its error is much higher than the other models and because its error drops to around its final value at smaller sample sizes, implying a simpler model.
+
+B is probably neither. If a model is overfitted, then its error would be extremely low for small $ N $, and then much higher for larger $ N $.
+
+C is probably overfitted. It has very large fluctuating error, and we see that it is be most complex model because it has the highest $ N $ for which it still has 0 training error.
+\newpage
+
+\section{}
+Flexible is good for its higher chance to find the true model, while less flexible is better for runtime. If you don't know (or have a good guess from the graphing the data or otherwise know something about the data's background), it'll probably a good idea to sacrifice some time to get a better model. On the other hand, if you somehow already know the true model, then you could use a less flexible approach since you wouldn't need to ``consider" other models and instead just train a single model.
+\newpage
+
+\section{}
+\begin{itemize}
+	\item Use the Hoeffding Inequality. $ N = 100 $
+	\[ 2e^{-2*0.1^2*100} \approx 0.270 \]
+	
+	\item $ N = 200 $
+	\[ 2e^{-2*0.1^2*200} \approx 0.036 \]
+\end{itemize}
+\newpage
+
+\section{}
+\[ X = \begin{bmatrix}
+	1 & 6.6 & 1 & 4.0 \\
+	1 & 6.4 & 2 & 5.0 \\
+	1 & 7.2 & 2 & 5.0 \\
+	1 & 6.4 & 2 & 5.0 \\
+	1 & 7.2 & 2 & 5.0 \\
+\end{bmatrix} \]
+\[ w_{ridge} = \left(X^TX+N\lambda \textbf{I}'\right)^{-1}X^Ty \]
+\[
+	= \left(
+	\begin{bmatrix}
+		1 & 6.6 & 1 & 4.0 \\
+		1 & 6.4 & 2 & 5.0 \\
+		1 & 7.2 & 2 & 5.0 \\
+		1 & 6.4 & 2 & 5.0 \\
+		1 & 7.2 & 2 & 5.0 \\
+	\end{bmatrix}^T
+	\begin{bmatrix}
+		1 & 6.6 & 1 & 4.0 \\
+		1 & 6.4 & 2 & 5.0 \\
+		1 & 7.2 & 2 & 5.0 \\
+		1 & 6.4 & 2 & 5.0 \\
+		1 & 7.2 & 2 & 5.0 \\
+	\end{bmatrix}+5 * 0.1 * 
+\begin{bmatrix}
+	0 & 0 & 0 & 0 \\
+	0 & 1 & 0 & 0 \\
+	0 & 0 & 1 & 0 \\
+	0 & 0 & 0 & 1 \\
+\end{bmatrix}\right)^{-1}
+\begin{bmatrix}
+	1 & 6.6 & 1 & 4.0 \\
+	1 & 6.4 & 2 & 5.0 \\
+	1 & 7.2 & 2 & 5.0 \\
+	1 & 6.4 & 2 & 5.0 \\
+	1 & 7.2 & 2 & 5.0 \\
+\end{bmatrix}^T
+\]
+\[
+= \left(
+\begin{bmatrix}
+	1 & 1 & 1 & 1 & 1 \\
+	6.6 & 6.4 & 7.2 & 6.4 & 7.2 \\
+	1 & 2 & 2 & 2 & 2 \\
+	4.0 & 5.0 & 5.0 & 5.0 & 5.0 \\
+\end{bmatrix}
+\begin{bmatrix}
+	1 & 6.6 & 1 & 4.0 \\
+	1 & 6.4 & 2 & 5.0 \\
+	1 & 7.2 & 2 & 5.0 \\
+	1 & 6.4 & 2 & 5.0 \\
+	1 & 7.2 & 2 & 5.0 \\
+\end{bmatrix}+5 * 0.1 * 
+\begin{bmatrix}
+	0 & 0 & 0 & 0 \\
+	0 & 1 & 0 & 0 \\
+	0 & 0 & 1 & 0 \\
+	0 & 0 & 0 & 1 \\
+\end{bmatrix}\right)^{-1}
+\begin{bmatrix}
+	1 & 1 & 1 & 1 & 1 \\
+	6.6 & 6.4 & 7.2 & 6.4 & 7.2 \\
+	1 & 2 & 2 & 2 & 2 \\
+	4.0 & 5.0 & 5.0 & 5.0 & 5.0 \\
+\end{bmatrix}
+\]
+\newpage
+
+\section{}
+We need to account for the $ L_2 $ term in the gradient.
+\[ \textbf{w} = \textbf{w} - \dfrac{\alpha}{N}\left( X^T\left(X\textbf{w}-\textbf{y}\right) + \lambda \textbf{I}'\textbf{w} \right) \]
+
+\end{document}
+
+
