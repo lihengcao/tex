@@ -62,13 +62,13 @@ The singularities are at $ z = 0, 1, 2 $. Let's find all the residues first.
 \[ \dfrac{\dfrac{z+1}{z(z-2)}}{z-1} \implies \dfrac{z+1}{z(z-2)}\Bigg|_{z=1} \implies -2 \]
 \[ \dfrac{\dfrac{z+1}{z(z-1)}}{z-2} \implies \dfrac{z+1}{z(z-1)}\Bigg|_{z=2} \implies 3/2 \]
 \subsection{Case I}
-We only need to worry about the singularity at $ z = 0 $, since $ z = 1,2 \not\in |z|=1/2 $ (the singularities at $ z=1,2 $ are not inside the current circle). Since the integral is about a circle of radius $ R $ (simple closed curve), the answer is just the residue at $ z = 0 $. The answer is \fbox{1/2}.
+We only need to worry about the singularity at $ z = 0 $, since $ z = 1,2 \not\in |z|=1/2 $ (the singularities at $ z=1,2 $ are not inside the current circle). Since the integral is about a circle of radius $ R $ (simple closed curve), the answer is just the residue at $ z = 0 $ multiplied by $ 2\pi i $. The answer is $ \boxed{\pi i} $.
 
 \subsection{Case II}
-Sum up the residue at $ z = 0, 1 $. The answer is $ 1/2-2 = \boxed{-3/2} $.
+Sum up the residue at $ z = 0, 1 $, then multiply. The answer is $ 1/2-2 \implies \boxed{-3\pi i} $.
 
 \subsection{Case III}
-Sum up the residue at $ z = 0, 1, 2 $. The answer is $ 1/2 - 2 +3/2 = \boxed{0} $.
+Sum up the residue at $ z = 0, 1, 2 $. The answer is $ 1/2 - 2 +3/2 \implies \boxed{0} $.
 \newpage
 
 \section{}
@@ -77,7 +77,57 @@ if $ \gamma $ is a simple closed path.
 \newpage
 
 \section{}
-s
+\subsection{a)}
+\begin{align*}
+	\dfrac{1}{2\pi i} \int\limits_{|z-a|=r} \dfrac{g(z)}{z-a} \,dz &= \dfrac{1}{2\pi i} \int\limits_{0}^{2\pi} \dfrac{g(a + re^{i\theta})}{re^{i\theta} - \cancel{a + a}} *ire^{i\theta} \,d\theta\\
+	&= \dfrac{1}{2\pi \cancel{i}} \int\limits_{0}^{2\pi} \dfrac{g(a + re^{i\theta})}{\cancel{re^{i\theta}}} *\cancel{ire^{i\theta}} \,d\theta\\
+	&= \dfrac{1}{2\pi} \int\limits_{0}^{2\pi} g(a + re^{i\theta}) \,d\theta\\
+	&\qed
+\end{align*}
+
+\subsection{b)}
+As $ r $ approaches 0, the integral \[ \dfrac{1}{2\pi} \int\limits_{0}^{2\pi} g(a + re^{i\theta}) \,d\theta \] turns into \[ \dfrac{1}{2\pi} \int\limits_{0}^{2\pi} g(a) \,d\theta \] Since there's no theta inside the integral, we can simplify to \[ \dfrac{g(a)}{2\pi}  \int\limits_{0}^{2\pi} d\theta = \dfrac{g(a)}{2\pi} * 2\pi = g(a) \]
+
+\subsection{c)}
+The residual is equal to the average value around the singularity. But since it doesn't actually depend on how big the radius of this ``around", we can just have the radius approach 0 and conclude that it's just the value at the singularity.
+
+\newpage
+\section{}
+We need to compute the sum of the residuals at $ z=1, 2 $
+\begin{align*}
+	\oint\limits_{|z-1|=3} \dfrac{z^2}{(z-2)^{2}(z-1)} \,dz &= 2\pi i \left[ Res_{z=1} \dfrac{z^2/(z-2)^2}{z-1} + Res_{z=2} \dfrac{z^2/(z-1)}{(z-2)^2} \right] \\
+	&= 2\pi i\left[ \left[z^2/(z-2)^2\right] \Bigg|_{z=1} + \left[\dfrac{1}{1!} \diff{}{z} (z^2/(z-1))\right] \Bigg|_{z=2} \right]\\
+	&= 2\pi i\left[ 1 + \left[ \left(\dfrac{2z(z-1) - z^2}{(z^2/(z-1))^2}\right)\right] \Bigg|_{z=2} \right]\\
+	&= 2\pi i\left[ 1 + \left[ \left(\dfrac{2*2(2-1) - 2^2}{(2^2/(2-1))^2}\right)\right]\right]\\
+	&= 2\pi i\left[ 1 + \left[ \left(\dfrac{4 - 4}{(4)^2}\right)\right] \right]\\
+	&= 2\pi i\left[ 1 + 0 \right]\\
+	&= \boxed{2\pi i}
+\end{align*}
+\newpage
+
+\section{}
+\subsection{a)}
+If a function $ f(z) $ is analytic on a disk $ |z - a| < R $, then \[ \sum\limits_{n=0}^{\infty} \dfrac{f^{(n)}(a)}{n!}(z-a)^{n}\] will converge to $ f(z) $
+
+\subsection{b)}
+\begin{enumerate}
+	\item \[ e^z = 1 + z + \dfrac{1}{2}z^2 + \dfrac{1}{3!}z^3 + \cdots + \dfrac{1}{n!} z^n \]
+	Since $ e^z $ is analytic everywhere, so this Taylor expansion is valid everywhere.
+	
+	\item \[ \cos{(z)} = 1 - \dfrac{1}{2}x^2 + \dfrac{1}{4!}x^4 + \cdots + \dfrac{(-1)^n}{(2n)!} x^{2n} \]
+	The cosine function is also analytic everywhere, so the expansion is valid everywhere.
+	
+	\item \[ 1/(1+z) = 1 - z + z^2 - z^3 + \cdots + (-1)^n z^n \]
+	This is valid only on the disk with $ R = 1 $ because the function is centered at $ z = 0 $ is not analytic at $ z = -1 $, resulting in a disk with radius 1.
+	
+\end{enumerate}
+
+\newpage
+
+\section{}
+The largest disk would be one of $ \boxed{R = 1} $. This is because the point $ z= 1 + i $ is 1 away from $ z= 1 $. The other point is disregarded because it is further away.
+
+The largest disk would be one of $ \boxed{R = \sqrt{4^2 + \dfrac{1}{2^2}} = 65/4} $. This is because the point $ z = 1/2 + 4i $ is 65/4 away from both $ z = 0, 1 $.
 
 \end{document}
 

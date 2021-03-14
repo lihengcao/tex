@@ -109,10 +109,10 @@ Flexible is good for its higher chance to find the true model, while less flexib
 \section{}
 \begin{itemize}
 	\item Use the Hoeffding Inequality. $ N = 100 $
-	\[ 2e^{-2*0.1^2*100} \approx 0.270 \]
+	\[ 1 - 2e^{-2*0.1^2*100} \approx 0.729 \]
 	
 	\item $ N = 200 $
-	\[ 2e^{-2*0.1^2*200} \approx 0.036 \]
+	\[ 1 - 2e^{-2*0.1^2*200} \approx 0.995 \]
 \end{itemize}
 \newpage
 
@@ -123,6 +123,13 @@ Flexible is good for its higher chance to find the true model, while less flexib
 	1 & 7.2 & 2 & 5.0 \\
 	1 & 6.4 & 2 & 5.0 \\
 	1 & 7.2 & 2 & 5.0 \\
+\end{bmatrix} \]
+\[ y = \begin{bmatrix}
+	24.0 \\
+	21.6 \\
+	34.7 \\
+	21.6 \\
+	34.7 \\
 \end{bmatrix} \]
 \[ w_{ridge} = \left(X^TX+N\lambda \textbf{I}'\right)^{-1}X^Ty \]
 \[
@@ -154,6 +161,13 @@ Flexible is good for its higher chance to find the true model, while less flexib
 	1 & 6.4 & 2 & 5.0 \\
 	1 & 7.2 & 2 & 5.0 \\
 \end{bmatrix}^T
+\begin{bmatrix}
+	24.0 \\
+	21.6 \\
+	34.7 \\
+	21.6 \\
+	34.7 \\
+\end{bmatrix}
 \]
 \[
 = \left(
@@ -182,12 +196,21 @@ Flexible is good for its higher chance to find the true model, while less flexib
 	1 & 2 & 2 & 2 & 2 \\
 	4.0 & 5.0 & 5.0 & 5.0 & 5.0 \\
 \end{bmatrix}
+\begin{bmatrix}
+	24.0 \\
+	21.6 \\
+	34.7 \\
+	21.6 \\
+	34.7 \\
+\end{bmatrix}
 \]
 \newpage
 
 \section{}
-We need to account for the $ L_2 $ term in the gradient.
-\[ \textbf{w} = \textbf{w} - \dfrac{\alpha}{N}\left( X^T\left(X\textbf{w}-\textbf{y}\right) + \lambda \textbf{I}'\textbf{w} \right) \]
+We need to account for the $ L_2 $ term in the gradient. Constants were ``absorbed" by the learning rate $ \alpha $.
+\[ \textbf{w} = \textbf{w} - \alpha\left(\dfrac{1}{N} X^T\left(X\textbf{w}-\textbf{y}\right) + \lambda \textbf{I}'\textbf{w} \right) \]
+Repeat for a certain number of iterations.
+
 
 \end{document}
 

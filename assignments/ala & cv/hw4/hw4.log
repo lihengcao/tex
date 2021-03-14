@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  5 MAR 2021 21:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  9 MAR 2021 18:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1015,18 +1015,19 @@ File: uesvect.fd
 ) [1
 
 {d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
- [6] (./hw4.aux)
+ [6] [7] [8]
+[9] (./hw4.aux)
 Package rerunfilecheck Info: File `hw4.out' has not changed.
-(rerunfilecheck)             Checksum: C8F530A0083FABAB830BAAFCE87DB7BF;495.
+(rerunfilecheck)             Checksum: 7CFA429AAB5DA2582D6E336C2F7B7EB0;958.
  ) 
 Here is how much of TeX's memory you used:
- 31262 strings out of 479302
- 671391 string characters out of 5871205
+ 31284 strings out of 479302
+ 671639 string characters out of 5871205
  1133959 words of memory out of 5000000
- 47928 multiletter control sequences out of 15000+600000
+ 47936 multiletter control sequences out of 15000+600000
  417619 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,11n,89p,1579b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,20n,89p,1579b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2020
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2020/texmf-di
@@ -1034,11 +1035,12 @@ st/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2020/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr17.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on hw4.pdf (6 pages, 89750 bytes).
+pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
+Output written on hw4.pdf (9 pages, 106415 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 180 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
