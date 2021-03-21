@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  16 MAR 2021 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  20 MAR 2021 21:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1014,19 +1014,30 @@ LaTeX Font Info:    Trying to load font information for U+esvect on input line
 File: uesvect.fd 
 ) [1
 
-{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./hw5.
-aux)
-Package rerunfilecheck Info: File `hw5.out' has not changed.
-(rerunfilecheck)             Checksum: F575F4D3B4089F3D60D1382591BF6B69;271.
+{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+ [6] [7]
+Overfull \hbox (129.9763pt too wide) detected at line 189
+[]
+ []
+
+[8] (./hw5.aux)
+
+Package rerunfilecheck Warning: File `hw5.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `hw5.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  EFDD3F6B49F29946029FBAF8B11674F4;557.
  ) 
 Here is how much of TeX's memory you used:
- 31251 strings out of 479302
- 671283 string characters out of 5871205
- 1128959 words of memory out of 5000000
- 47924 multiletter control sequences out of 15000+600000
+ 31271 strings out of 479302
+ 671408 string characters out of 5871205
+ 1136959 words of memory out of 5000000
+ 47918 multiletter control sequences out of 15000+600000
  417619 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,11n,89p,1579b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,13n,89p,1579b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2020
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2020/texmf-di
@@ -1035,11 +1046,12 @@ ype1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2020/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr17.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw5.pdf (3 pages, 86520 bytes).
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><d:/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on hw5.pdf (8 pages, 110622 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 135 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
