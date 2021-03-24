@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  22 MAR 2021 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  23 MAR 2021 23:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1036,42 +1036,42 @@ File: images/ridgereg.png Graphic file (type png)
 <use images/ridgereg.png>
 Package pdftex.def Info: images/ridgereg.png  used on input line 144.
 (pdftex.def)             Requested size: 500.46852pt x 290.88603pt.
-<images/kfold.png, id=79, 558.888pt x 490.83376pt>
+<images/kfold.png, id=79, 486.31688pt x 497.60907pt>
 File: images/kfold.png Graphic file (type png)
 <use images/kfold.png>
 Package pdftex.def Info: images/kfold.png  used on input line 151.
-(pdftex.def)             Requested size: 505.89pt x 444.29272pt.
+(pdftex.def)             Requested size: 505.89pt x 517.6379pt.
  [5pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.155 	F
-        or k-fold, I started off using range(0,100), but without doing the l...
- <./images/ridgereg.png>] [6pdfTeX warning (ext4): destination with the same id
-entifier (name{figure.3}) has been already used, duplicate ignored
+l.155 \end{itemize}
+                    <./images/ridgereg.png>] [6pdfTeX warning (ext4): destinati
+on with the same identifier (name{figure.3}) has been already used, duplicate i
+gnored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.157 \newpage
+l.159 \newpage
                <./images/kfold.png>] [7]
 <images/6a.png, id=100, 377.61075pt x 136.71075pt>
 File: images/6a.png Graphic file (type png)
 <use images/6a.png>
-Package pdftex.def Info: images/6a.png  used on input line 172.
+Package pdftex.def Info: images/6a.png  used on input line 174.
 (pdftex.def)             Requested size: 377.60982pt x 136.7104pt.
  [8pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.187 \end{document}
+l.189 \end{document}
                      <./images/6a.png>] (./hw4.aux)
 Package rerunfilecheck Info: File `hw4.out' has not changed.
 (rerunfilecheck)             Checksum: 3DC43373EC07B03296A6788CDFF2BB59;210.
  ) 
 Here is how much of TeX's memory you used:
- 31311 strings out of 479302
- 671992 string characters out of 5871205
+ 31310 strings out of 479302
+ 671974 string characters out of 5871205
  1137959 words of memory out of 5000000
- 47955 multiletter control sequences out of 15000+600000
+ 47954 multiletter control sequences out of 15000+600000
  417956 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,12n,89p,1579b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1088,7 +1088,7 @@ exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/texlive/2020
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2020/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public
 /cm-super/sfrm1200.pfb>
-Output written on hw4.pdf (8 pages, 219385 bytes).
+Output written on hw4.pdf (8 pages, 210189 bytes).
 PDF statistics:
  167 PDF objects out of 1000 (max. 8388607)
  134 compressed objects within 2 object streams

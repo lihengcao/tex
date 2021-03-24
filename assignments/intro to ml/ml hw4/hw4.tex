@@ -138,7 +138,7 @@ The geometric interpretation is because $ \textbf{w}^T\textbf{x} $ represents a 
 	
 	\item gradient \[\textbf{x}^T(y-\sigma{(\textbf{x}\mathbf{w})}) - 2 \lambda I' \mathbf{w}\]
 	
-	\item The optimal $ \lambda = 0 $. It didn't help because we got the best results when we multiplied the penalty by 0. The training error and the validation error increased.
+	\item Optimal $ \lambda = 0.6 $. It did help, or else the best lambda would be 0. The training error would get worse (no more overfitting), but the test/validation data would get better.
 	\begin{figure}[H]
 		\centering
 		\includegraphics{images/ridgereg.png}
@@ -151,9 +151,11 @@ The geometric interpretation is because $ \textbf{w}^T\textbf{x} $ represents a 
 		\includegraphics[width=\textwidth]{images/kfold.png}
 		\caption{5 fold}
 		\label{fig:4:kfold}
-	\end{figure}
-	For k-fold, I started off using range(0,100), but without doing the lambda\_/100000. This was to see which integer $ \lambda $ in the interval $ [0,100) $ the best one was closest to. I then started dividing, to decrease the distance between tested $ \lambda $s, all the way until $ 1/100000 $. The best $ \lambda $ I got was 0.
+	\end{figure}	
 \end{itemize}
+Basically the code iterates over a range of lambdas and does cross validation on each, and then we see which one has the best errors.
+
+Interestingly, if the iterations for gradient ascent were too low, I would actually get $ \lambda = 0 $ as the best error. I got $ \lambda = 0.6 $ from increasing the iterations and letting the code run for like 30 minutes. 
 \newpage
 
 \section{}
