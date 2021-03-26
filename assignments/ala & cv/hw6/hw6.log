@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  24 MAR 2021 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  25 MAR 2021 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**hw4.tex
-(./hw4.tex
+**hw6.tex
+(./hw6.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-06>
 (d:/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -898,27 +898,27 @@ Package: parskip 2020-06-15 v2.0f non-zero parskip adjustments
 (d:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write5
 
-Excluding comment 'comment') (./hw4.aux)
-\openout1 = `hw4.aux'.
+Excluding comment 'comment') (./hw6.aux)
+\openout1 = `hw6.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -976,7 +976,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 32.
 
 (d:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -989,109 +989,54 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count349
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 
-(./hw4.out) (./hw4.out)
+(./hw6.out) (./hw6.out)
 \@outlinefile=\write6
-\openout6 = `hw4.out'.
+\openout6 = `hw6.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
 
  (d:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
 
 (d:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-27.
+34.
 
 (d:/texlive/2020/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 ) [1
 
-{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<images/3b.png, id=51, 437.83575pt x 212.59425pt>
-File: images/3b.png Graphic file (type png)
-<use images/3b.png>
-Package pdftex.def Info: images/3b.png  used on input line 52.
-(pdftex.def)             Requested size: 437.83469pt x 212.59372pt.
- [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.79 	\]
-         <./images/3b.png>]
-Overfull \hbox (18.18552pt too wide) detected at line 115
-\OT1/cmr/m/n/12 +[] [] []
- []
-
-[4]
-<images/ridgereg.png, id=78, 500.46976pt x 290.88675pt>
-File: images/ridgereg.png Graphic file (type png)
-<use images/ridgereg.png>
-Package pdftex.def Info: images/ridgereg.png  used on input line 144.
-(pdftex.def)             Requested size: 500.46852pt x 290.88603pt.
-<images/kfold.png, id=79, 510.40688pt x 496.10344pt>
-File: images/kfold.png Graphic file (type png)
-<use images/kfold.png>
-Package pdftex.def Info: images/kfold.png  used on input line 151.
-(pdftex.def)             Requested size: 505.89pt x 491.74194pt.
- [5pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.155 \end{itemize}
-                    <./images/ridgereg.png>] [6pdfTeX warning (ext4): destinati
-on with the same identifier (name{figure.3}) has been already used, duplicate i
-gnored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.159 \newpage
-               <./images/kfold.png>] [7]
-<images/6a.png, id=100, 377.61075pt x 136.71075pt>
-File: images/6a.png Graphic file (type png)
-<use images/6a.png>
-Package pdftex.def Info: images/6a.png  used on input line 174.
-(pdftex.def)             Requested size: 377.60982pt x 136.7104pt.
- [8pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.189 \end{document}
-                     <./images/6a.png>] (./hw4.aux)
-Package rerunfilecheck Info: File `hw4.out' has not changed.
-(rerunfilecheck)             Checksum: 3DC43373EC07B03296A6788CDFF2BB59;210.
+{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./hw6.aux)
+Package rerunfilecheck Info: File `hw6.out' has not changed.
+(rerunfilecheck)             Checksum: 9534070C232AA0A3F935CB7C3E3F8D46;35.
  ) 
 Here is how much of TeX's memory you used:
- 31310 strings out of 479302
- 671974 string characters out of 5871205
- 1136959 words of memory out of 5000000
- 47954 multiletter control sequences out of 15000+600000
- 417956 words of font info for 84 fonts, out of 8000000 for 9000
+ 31233 strings out of 479302
+ 671110 string characters out of 5871205
+ 1123959 words of memory out of 5000000
+ 47917 multiletter control sequences out of 15000+600000
+ 417619 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,12n,89p,1579b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
-{d:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<d:/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><d:/texlive/2020/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2020/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2020/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi6.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2020/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2020/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public
-/cm-super/sfrm1200.pfb>
-Output written on hw4.pdf (8 pages, 210793 bytes).
+ 87i,6n,89p,1579b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+<d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2020/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2020/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb>
+Output written on hw6.pdf (1 page, 64617 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 52 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
