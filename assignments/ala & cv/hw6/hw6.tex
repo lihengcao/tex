@@ -40,9 +40,200 @@
 		\par$ e^{1/z} = 1 + 1/z + 1/(2!z^2) + 1/(3! z^3) + \cdots$ has infinite terms with negative powers, making it an essential singularity. The residue is 1 because of the coefficient of $ 1/z $. To get a residue of 15, we can just multiply the entire thing by 15.
 		
 		\item $ \dfrac{16}{z-i} $
+		\par $ \dfrac{1}{z-i} $ has a simple pole at $ z=i $, and a residue of 1. We can multiply by 16 to get the residue we want.
 		
+		\item $ \dfrac{1}{(z-(2+3i))^4} + \dfrac{17+22i}{z-(2+3i)}$
+		\par The first term satisfies the pole order requirement, but the residue is 0 because we take derivatives of 1 (and multiply), which would be 0. So the second term fulfills the requirement of the residue, which equals $ 17+22i $
 		
+		\item $ \dfrac{\sin(z+2)}{z+2} $
+		\par $ \dfrac{\sin(z+2)}{z+2} = 1 - \dfrac{(z+2)^2}{3!} + \dfrac{(z+2)^2}{5!} + \cdots $, making it a removable singularity.	
 	\end{enumerate}
+
+	\item Removable singularities have a residue of 0.
 \end{enumerate}
+\newpage
+
+\section{}
+First, find the distances of the singularities to the center of the circle. 
+\par \begin{tabular}{|l|r|}
+	\hline
+	point & distance \\
+	\hline\hline
+	-10 & $ \sqrt{145} $\\
+	5 & $ \sqrt{10} $\\
+	3i & $ \sqrt{8} $\\
+	\hline
+\end{tabular}
+\begin{enumerate}[(a)]
+	\item There are no singularities inside $ R=2 $, so the result is 0, using the Cauchy Integral Theorem.
+	
+	\item The singularity at $ 3i $ needs to be accounted for. Using the residue theorem, the result is $ 2\pi i (6+7i) $.
+	
+	\item One new singularity appears at $ 5 $, so we just add it to the previous integral. The result is $ 2\pi i (6 + 12i) $
+	
+	\item All singularities needs to be accounted for now. The result is $ 2\pi i (21+12i) $
+	
+	\item We need to recalculate the distances. \par
+	\begin{tabular}{|l|r|}
+		\hline
+		point & distance \\
+		\hline\hline
+		-10 & $ \sqrt{101} $\\
+		5 & $ \sqrt{26} $\\
+		3i & $ 2 $\\
+		\hline
+	\end{tabular}\par
+	The smallest distance to a singularity is 2, so that's our radius.
+	
+	\item \begin{tabular}{|l|r|}
+		\hline
+		point & distance \\
+		\hline\hline
+		-10 & $ 10 $\\
+		5 & $ 5 $\\
+		3i & $ 3 $\\
+		\hline
+	\end{tabular}\par
+	The smallest distance is 3.
+\end{enumerate}
+\newpage
+
+\section{}
+\begin{enumerate}[(a)]
+	\item $ z=\pm 1 $
+	
+	\item The shortest distance from $ z=0 $ to $ z=\pm 1 $ is 1, so the set of points is $ |z| < 1 $.
+	
+	\item $ f(z) = \sum_{n=0}^{\infty} \dfrac{f^(n)(a)}{n!} (z-a)^n, |z-a| < R$
+	
+	\item \begin{align*}
+		a_0 &\rightarrow h(z) &\rightarrow  0\\
+		a_1 &\rightarrow (-2)(1-z^2)^{-3}(-2z) &\rightarrow 0\\
+		a_2 &\rightarrow 4(1-z^2)^{-3} 4z(-3)(1-z^2)^{-4}(-2z) &\rightarrow 0\\
+		a_3 &\rightarrow 4(-3)(1-z^2)^{-4}(-2z) + 48z(1-z%2)^{-4}+24z^2(-4)(1-z^2)^{-5}(-2z) &\rightarrow 0
+	\end{align*}
+
+	\item $ 1 + 2z^2 + 3z^4 + 4z^6 + \cdots $
+	\begin{align*}
+		a_0 &= 1\\
+		a_1 &= 0\\
+		a_2 &= 2\\
+		a_3 &= 0\\
+		a_4 &= 3\\
+		a_5 &= 0\\
+		a_6 &= 4
+	\end{align*}
+\end{enumerate}
+\newpage
+
+\section{}
+Because the function is even and it meets the power requirements, we can use Fact \#11.
+\begin{align*}
+	\int_{0}^{\infty} \dfrac{1}{(x^2+16)^3} \, dx &= \dfrac{1}{2} \int_{-\infty}^{\infty} \dfrac{1}{(x^2+16)^3} \, dx
+	&= \dfrac{1}{2}\oint_{Im(z) > 0} \dfrac{1}{(z^2+16)^3} \, dz
+\end{align*}
+We just need to find the relevant singularities and residues. The only singularity is at $ z=+4i $. The result is \[ \dfrac{1}{2} 2\pi i (\operatorname{Res}_{z=4i} \dfrac{(z+4i)^-3}{(z-4i)^3}) = \dfrac{3}{2^14} \]
+\newpage
+
+\section{}
+\begin{enumerate}[(a)]
+	\item 
+	\begin{align*}
+		\dfrac{1+2i}{1-2i} &= \dfrac{(1+2i)(1+2i)}{(1-2i)(1-2I)}\\
+		&= \dfrac{-3 + 4i}{5}\\
+		&= \dfrac{-3}{5} + i\dfrac{4}{5}
+	\end{align*}
+
+	\item 
+	\begin{align*}
+		e^{3+4i} &= e^3e^{4i}\\
+		&= e^3 (\cos(4) + i\sin(4))\\
+		&= e^3\cos(4) + ie^3\sin(4)
+	\end{align*}
+
+	\item 
+	\begin{align*}
+		\sin(3+7i) &= \dfrac{e^{3i-7}-e^{-3i+7}}{2i}\\
+		&= \dfrac{e^{-7}(\cos(3) + i\sin(3)) - e^7(\cos(3)-i\sin(3))}{2i}\\
+		&= \dfrac{i\sin(3)(e^{-7}+e^{7}) + \cos(3)(e^{-7}-e^{7})}{2i}\\
+		&= \dfrac{\sin(3)(e^{-7}+e^{7})}{2} + i\dfrac{\cos(3)(e^{7}-e^{-7})}{2}
+	\end{align*}
+\end{enumerate}
+\newpage
+
+\section{}
+Use Fact \#12.
+\begin{align*}
+	\int_{0}^{2\pi} \dfrac{1}{6+\sin(\theta)} \,d\theta &= \oint_{|z|=1} \dfrac{1}{6+\dfrac{z+z^{-1}}{2i}} \dfrac{1}{iz} \, dz\\
+	\oint_{|z|=1} \dfrac{1}{6iz + \dfrac{z^2-1}{2}} \, dz
+\end{align*}
+Find the singularities. 
+\begin{align*}
+	z^2 + 12i z - 1 &= 0\\
+	\dfrac{-12i\pm\sqrt{-144 +4}}{2} &= -6i\pm i\sqrt{35}\\
+\end{align*}
+Only one of these singularities is inside our region. Now find the residue.
+\begin{align*}
+	\operatorname{Res}_{z=(-6+\sqrt{35})i} \dfrac{1}{6iz + (z^2 - 1)/2}\\
+	&= \dfrac{1}{\diff{6iz + (z^2 - 1)/2}{z}}\\
+	&= \dfrac{1}{6i+z}\\
+	&= \dfrac{1}{\sqrt{35}i}
+\end{align*}
+The result is $ \dfrac{2\pi}{\sqrt{35}} $
+\newpage
+
+\section{}
+\begin{enumerate}[(a)]
+	\item Verify $ u_{xx} + u_{yy} = 0 $
+	\begin{align*}
+		u_x &= 3x^2-3y^2\\
+		u_{xx} &= 6x
+	\end{align*}
+	\begin{align*}
+		u_{y} &= -6xy\\
+		u_{yy} &= -6x
+	\end{align*}
+	\begin{align*}
+		6x - 6x &= 0
+	\end{align*}
+	$ k(z) $ is harmonic.
+	
+	\item Set $ u_x = v_y \land u_y = -v_x $
+	\begin{align*}
+		u_x &= 3x^2 -3y^2\\
+		v_y &= A(-3x^2 + 3y^2)
+	\end{align*}
+	\begin{align*}
+		v_y &= -6xy\\
+		-v_x &= A(6xy)
+	\end{align*}
+	The only way this can work is if $ A = -1 $.
+	
+	\item Use the $ y=0 \implies z = x $ heuristic. We get $ k(z) = z^3 $
+\end{enumerate}
+\newpage
+
+\section{}
+\begin{enumerate}[(a)]
+	\item The mapping cubes the radius and multiplies the angle by 3. Both of those are one-to-one functions, and $ \pi/3 $ multiplied by 3 is the upper half of the plane.
+	
+	\item $ w = e^x e^{iy} $. $ \operatorname{Im}(z) $ corresponds to the angle of $ w $. The angle from $ 0 $ to $ \pi $ is just the upper half of the plane.
+	
+	\item $ w = -1/z = -1/r e^{i\theta} = 1/2 e^{i(\pi-\theta)}$. Since we take the inverse of the radius, we satisfy $ |w| < 1/5 $. We get the upper half of the plane, just backwards starting from $ \pi $ to $ 0 $ (which is the same region).
+	
+	\item Find $ \operatorname{Re}(1/z) > 1 $
+	\begin{align*}
+		\operatorname{Re}(1/z) &> 1\\
+		\operatorname{Re}(1/z * \bar{z}/\bar{z}) &> 1\\
+		\operatorname{Re}(\bar{z}/|z|) &> 1\\
+		x/|z| &> 1\\
+		x &> |z|\\
+		x &> x^2 + y^2\\
+		x^2 - x + y^2 < 0\\
+		(x-1/2)^2 + y^2 < 1/2^2
+	\end{align*}
+	This is a circle centered at $ (1/2, 0) $ with $ r = 1/2 $, which is the same as $ |z-1/2| < 1/2 $.
+\end{enumerate}
+
 
 \end{document}
