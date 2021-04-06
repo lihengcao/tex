@@ -131,7 +131,51 @@ is equivalent to
 \newpage
 
 \section{}
+\begin{figure}[H]
+	\centering
+	\includegraphics{images/c=1e-1.png}
+	\caption{C=0.1}
+	\label{fig:4:c=0.1}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics{images/c=10.png}
+	\caption{c=10}
+	\label{fig:4:c=10}
+\end{figure}
+As expected, the margin is inversely related with the penalty.
+\newpage
 
-	
-	
+\section{}
+\begin{figure}[H]
+	\centering
+	\includegraphics{images/5before.png}
+	\caption{Before transformation}
+	\label{fig:5:before}
+\end{figure}
+It looks like we can either use RBF or Polynomial (quadratic that faces downward) Kernel.
+\begin{figure}[H]
+	\centering
+	\includegraphics{images/5after.png}
+	\caption{After RBF Kernel}
+	\label{fig:5:after}
+\end{figure}
+\newpage
+
+\section{}
+Assume typo: $ (-0.08, -0.06) \implies (-0.06, -0.08) $. 
+\par That point is not a support vector, as it is not on the dotted lines, and the point's removal will not change the margin. If you remove a support vector, there is a possibility that you could find a better margin. However, this is not guaranteed.
+\newpage 
+
+\section{}
+\begin{align*}
+	\Phi(\mathbf{x})^T\Phi(\mathbf{x'}) &= (1+\mathbf{x}^T\mathbf{x'})^2\\
+	(1, \sqrt{2}x_{i1}, \sqrt{2}x_{i2}, x^{2}_{i1}, x^{2}_{i2}, \sqrt{2}x_{i1}x_{i2})^T &\\
+	\times (1, \sqrt{2}x_{i1}', \sqrt{2}x_{i2}', x^{2'}_{i1}, x^{2'}_{i2}, \sqrt{2}x_{i1}'x_{i2}') &= 1 + 2\mathbf{x}^T\mathbf{x'} + (\mathbf{x}^T\mathbf{x'})^2\\
+	\cancel{1} + 2x_{i1}x_{i1}' + 2x_{i2}x_{i2}' + x_{i1}^{2}x_{i1}^{2'} + x_{i2}^{2}x_{i2}^{2'} + 2x_{i1}x_{i2}x_{i1}'x_{i2}' &= \cancel{1} + 2 [x_{i1}, x_{i2}]^T[x_{i1}', x_{i2}']\\  &\quad + ([x_{i1}, x_{i2}]^T[x_{i1}', x_{i2}'])^2\\
+	\cancel{2x_{i1}x_{i1}' + 2x_{i2}x_{i2}'} + x_{i1}^{2}x_{i1}^{2'} + x_{i2}^{2}x_{i2}^{2'} + 2x_{i1}x_{i2}x_{i1}'x_{i2}' &= \cancel{2x_{i1}x_{i1}' + 2x_{i2}x_{i2}'} + (x_{i1}x_{i1}' + x_{i2}x_{i2}')^2\\
+	\cancel{x_{i1}^{2}x_{i1}^{2'} + x_{i2}^{2}x_{i2}^{2'} + 2x_{i1}x_{i2}x_{i1}'x_{i2}'} &=\cancel{x_{i1}^2x_{i1}^{2'} + 2x_{i1}x_{i1}'x_{i2}x_{i2}' + x_{i2}^2x_{i2}^{2'}}\\
+	&\qed
+\end{align*}
+
 \end{document}
