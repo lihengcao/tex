@@ -52,14 +52,14 @@
 					\hline 
 					$x_1$ & $ x_2 $ & $ y $ & functional margin\\\hline
 					\hline
-					0 & 0 & -1 & -3\\\hline
-					2 & 2 & -1 & -3\\\hline
+					0 & 0 & -1 & 3\\\hline
+					2 & 2 & -1 & 3\\\hline
 					2 & 0 & 1 & 3\\\hline
-					1 & 1.5 & -1 & -4.5\\\hline
+					1 & 1.5 & -1 & 4.5\\\hline
 					3 & 0.5 & 1 & 4.5\\\hline				
 				\end{tabular}
 			\end{table}
-			The absolute minimum is 3. 
+			The minimum is 3. 
 		
 			\item To find the geometric margin, we just divide everything by $ \|w\|_{2} = \sqrt{3^2 + 3^2}  = 3\sqrt{2}$.
 			\begin{table}[H]
@@ -68,14 +68,14 @@
 					\hline 
 					$x_1$ & $ x_2 $ & $ y $ & geometric margin\\\hline
 					\hline
-					0 & 0 & -1 & $ -\frac{1}{\sqrt{2}} $\\\hline
-					2 & 2 & -1 & $ -\frac{1}{\sqrt{2}} $\\\hline
+					0 & 0 & -1 & $ \frac{1}{\sqrt{2}} $\\\hline
+					2 & 2 & -1 & $ \frac{1}{\sqrt{2}} $\\\hline
 					2 & 0 & -1 & $ \frac{1}{\sqrt{2}} $\\\hline
-					1 & 1.5 & -1 & $ -\frac{3}{2\sqrt{2}} $\\\hline
+					1 & 1.5 & -1 & $ \frac{3}{2\sqrt{2}} $\\\hline
 					3 & 0.5 & 1 & $ \frac{3}{2\sqrt{2}} $\\\hline				
 				\end{tabular}
 			\end{table}
-			The absolute minimum is $ \dfrac{1}{\sqrt{2}} $
+			The minimum is $ \dfrac{1}{\sqrt{2}} $
 			
 			\item We divide $ w, w_0 $ by the functional margin to get the canonical weights. They are $ [3, -3]/3 = [1, -1], -3/3 = -1 $		
 		\end{enumerate}
@@ -153,11 +153,11 @@ As expected, the margin is inversely related with the penalty.
 	\caption{Before transformation}
 	\label{fig:5:before}
 \end{figure}
-It looks like we can either use RBF or Polynomial (quadratic that faces downward) Kernel.
+Since the yellow points are very close to the origin and the red points are far from the origin, we can do $ X \mapsto X^2 $.
 \begin{figure}[H]
 	\centering
 	\includegraphics{images/5after.png}
-	\caption{After RBF Kernel}
+	\caption{After Transform}
 	\label{fig:5:after}
 \end{figure}
 \newpage

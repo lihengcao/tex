@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  5 APR 2021 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  8 APR 2021 16:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**mw5.tex
-(./mw5.tex
+**"la hw1.tex"
+(./la hw1.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-06>
 (d:/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -898,8 +898,8 @@ Package: parskip 2020-06-15 v2.0f non-zero parskip adjustments
 (d:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write5
 
-Excluding comment 'comment') (./mw5.aux)
-\openout1 = `mw5.aux'.
+Excluding comment 'comment') (./la hw1.aux)
+\openout1 = `"la hw1.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
@@ -993,16 +993,18 @@ LaTeX Info: Redefining \ref on input line 32.
 LaTeX Info: Redefining \pageref on input line 32.
 LaTeX Info: Redefining \nameref on input line 32.
 
-(./mw5.out) (./mw5.out)
+(./la hw1.out) (./la hw1.out)
 \@outlinefile=\write6
-\openout6 = `mw5.out'.
+\openout6 = `"la hw1.out"'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
 
- (d:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(d:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
+
 
 (d:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1012,89 +1014,45 @@ LaTeX Font Info:    Trying to load font information for U+esvect on input line
 
 (d:/texlive/2020/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
-)
-<images/1a.png, id=35, 289.83281pt x 197.98969pt>
-File: images/1a.png Graphic file (type png)
-<use images/1a.png>
-Package pdftex.def Info: images/1a.png  used on input line 39.
-(pdftex.def)             Requested size: 289.83209pt x 197.9892pt.
- [1
+) [1
 
-{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}pdfTeX warning (e
-xt4): destination with the same identifier (name{figure.1}) has been already us
-ed, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.78 			T
-         he absolute minimum is $ \dfrac{1}{\sqrt{2}} $ <./images/1a.png>]
-[2] [3] [4]
-<images/c=1e-1.png, id=78, 381.425pt x 251.94125pt>
-File: images/c=1e-1.png Graphic file (type png)
-<use images/c=1e-1.png>
-Package pdftex.def Info: images/c=1e-1.png  used on input line 136.
-(pdftex.def)             Requested size: 381.42406pt x 251.94063pt.
-<images/c=10.png, id=79, 381.425pt x 251.94125pt>
-File: images/c=10.png Graphic file (type png)
-<use images/c=10.png>
-Package pdftex.def Info: images/c=10.png  used on input line 142.
-(pdftex.def)             Requested size: 381.42406pt x 251.94063pt.
- [5pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+ [6]
+<images/cube.png, id=85, 1541.76pt x 1728.4575pt>
+File: images/cube.png Graphic file (type png)
+<use images/cube.png>
+Package pdftex.def Info: images/cube.png  used on input line 121.
+(pdftex.def)             Requested size: 505.89pt x 567.14873pt.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.147 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{figure.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.147 \newpage
-               <./images/c=1e-1.png> <./images/c=10.png>]
-<images/5before.png, id=88, 395.4775pt x 251.94125pt>
-File: images/5before.png Graphic file (type png)
-<use images/5before.png>
-Package pdftex.def Info: images/5before.png  used on input line 152.
-(pdftex.def)             Requested size: 395.47653pt x 251.94063pt.
-<images/5after.png, id=89, 395.4775pt x 251.94125pt>
-File: images/5after.png Graphic file (type png)
-<use images/5after.png>
-Package pdftex.def Info: images/5after.png  used on input line 159.
-(pdftex.def)             Requested size: 395.47653pt x 251.94063pt.
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.163 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{figure.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.163 \newpage
-               <./images/5before.png> <./images/5after.png>] [7] [8] (./mw5.aux
-)
-Package rerunfilecheck Info: File `mw5.out' has not changed.
+l.126 	\item \[ \sqrt{1+1+1} = \sqrt{3} \]
+                                           <./images/cube.png>] [8] [9]
+(./la hw1.aux)
+Package rerunfilecheck Info: File `"la hw1".out' has not changed.
 (rerunfilecheck)             Checksum: FED12652D3F2FEAB4C00FF7C53BE586E;245.
  ) 
 Here is how much of TeX's memory you used:
- 31312 strings out of 479302
- 672071 string characters out of 5871205
- 1135959 words of memory out of 5000000
- 47960 multiletter control sequences out of 15000+600000
- 417619 words of font info for 83 fonts, out of 8000000 for 9000
+ 31293 strings out of 479302
+ 671704 string characters out of 5871205
+ 1130964 words of memory out of 5000000
+ 47938 multiletter control sequences out of 15000+600000
+ 418667 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,18n,89p,1579b,524s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,12n,89p,1584b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2020
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2020/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2020/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.
-pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on mw5.pdf (8 pages, 151999 bytes).
+cm/cmsy10.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "la hw1.pdf" (9 pages, 223699 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 94 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 150 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 74 words of extra memory for PDF output out of 10000 (max. 10000000)
 
