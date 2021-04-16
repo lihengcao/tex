@@ -1,0 +1,16 @@
+{
+    "abbrev": "",
+    "description": [
+        ""
+    ],
+    "formatVersion": 1,
+    "menu": "",
+    "name": "begin enumerate lettering",
+    "shortcut": "Shift+F4",
+    "tag": [
+        "\\begin{enumerate}[(a)]",
+        "\t\\item %|",
+        "\\end{enumerate}"
+    ],
+    "trigger": ""
+}

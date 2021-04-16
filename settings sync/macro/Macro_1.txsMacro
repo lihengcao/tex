@@ -1,0 +1,14 @@
+{
+    "abbrev": "",
+    "description": [
+        "draw a line through, indicating cancelling"
+    ],
+    "formatVersion": 1,
+    "menu": "",
+    "name": "cancel",
+    "shortcut": "Shift+F2",
+    "tag": [
+        "\\cancel{%|}"
+    ],
+    "trigger": ""
+}

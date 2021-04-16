@@ -1,0 +1,19 @@
+{
+    "abbrev": "",
+    "description": [
+        "Inserts a figure environment"
+    ],
+    "formatVersion": 1,
+    "menu": "",
+    "name": "begin figure image",
+    "shortcut": "Shift+F1",
+    "tag": [
+        "\\begin{figure}[H]",
+        "    \\centering",
+        "    \\includegraphics[width=\\textwidth]{%<path%>}",
+        "    \\caption{%<caption%>}",
+        "    \\label{fig:%<label%>}",
+        "\\end{figure}"
+    ],
+    "trigger": ""
+}
