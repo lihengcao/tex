@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  15 APR 2021 23:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  17 APR 2021 22:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -898,7 +898,14 @@ Package: parskip 2020-06-15 v2.0f non-zero parskip adjustments
 (d:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write5
 
-Excluding comment 'comment') (./ML HW6.aux)
+Excluding comment 'comment') (./ML HW6.aux
+
+LaTeX Warning: Label `fig:7:f:change' multiply defined.
+
+
+LaTeX Warning: Label `fig:7:f:graph' multiply defined.
+
+)
 \openout1 = `"ML HW6.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -1015,11 +1022,11 @@ LaTeX Font Info:    Trying to load font information for U+esvect on input line
 (d:/texlive/2020/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-<images/1a.png, id=11, 1541.76pt x 1491.5725pt>
+<images/1a.png, id=15, 1541.76pt x 1491.5725pt>
 File: images/1a.png Graphic file (type png)
 <use images/1a.png>
 Package pdftex.def Info: images/1a.png  used on input line 39.
-(pdftex.def)             Requested size: 337.26pt x 326.28069pt.
+(pdftex.def)             Requested size: 273.90544pt x 264.98999pt.
  [1
 
 {d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}pdfTeX warning (e
@@ -1027,25 +1034,196 @@ xt4): destination with the same identifier (name{figure.1}) has been already us
 ed, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.47 \end{document}
-                    <./images/1a.png>] (./ML HW6.aux)
+l.100 		$
+          \dfrac{\partial J}{\partial W_{11}^{(2)}} = \delta_{1}^{(l+1)} a_{...
+ <./images/1a.png>] [2]
+Overfull \hbox (38.31995pt too wide) detected at line 231
+[]
+ []
+
+[3] [4] [5]
+<images/7achange.png, id=57, 414.79968pt x 58.71938pt>
+File: images/7achange.png Graphic file (type png)
+<use images/7achange.png>
+Package pdftex.def Info: images/7achange.png  used on input line 426.
+(pdftex.def)             Requested size: 252.94499pt x 35.8071pt.
+<images/7agraph.png, id=58, 300.3722pt x 207.77625pt>
+File: images/7agraph.png Graphic file (type png)
+<use images/7agraph.png>
+Package pdftex.def Info: images/7agraph.png  used on input line 433.
+(pdftex.def)             Requested size: 252.94499pt x 174.9747pt.
+<images/7bchange.png, id=59, 243.15843pt x 109.1578pt>
+File: images/7bchange.png Graphic file (type png)
+<use images/7bchange.png>
+Package pdftex.def Info: images/7bchange.png  used on input line 442.
+(pdftex.def)             Requested size: 252.94499pt x 113.5514pt.
+<images/7bgraph.png, id=60, 301.125pt x 208.52907pt>
+File: images/7bgraph.png Graphic file (type png)
+<use images/7bgraph.png>
+Package pdftex.def Info: images/7bgraph.png  used on input line 448.
+(pdftex.def)             Requested size: 365.28592pt x 252.94499pt.
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.452 		T
+         he accuracy with the ReLu function was 9.75\%.pdfTeX warning (ext4): d
+estination with the same identifier (name{figure.3}) has been already used, dup
+licate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.452 		T
+         he accuracy with the ReLu function was 9.75\%.pdfTeX warning (ext4): d
+estination with the same identifier (name{figure.4}) has been already used, dup
+licate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.452 		T
+         he accuracy with the ReLu function was 9.75\%. <./images/7achange.png>
+ <./images/7agraph.png> <./images/7bchange.png>]
+<images/7cchange.png, id=74, 173.14688pt x 157.33781pt>
+File: images/7cchange.png Graphic file (type png)
+<use images/7cchange.png>
+Package pdftex.def Info: images/7cchange.png  used on input line 457.
+(pdftex.def)             Requested size: 252.94499pt x 229.85773pt.
+<images/7cgraph.png, id=75, 301.8778pt x 208.52907pt>
+File: images/7cgraph.png Graphic file (type png)
+<use images/7cgraph.png>
+Package pdftex.def Info: images/7cgraph.png  used on input line 463.
+(pdftex.def)             Requested size: 252.94499pt x 174.7273pt.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.467 		T
+         he accuracy with the tanh function was 88.873\%.pdfTeX warning (ext4):
+ destination with the same identifier (name{figure.6}) has been already used, d
+uplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.467 		T
+         he accuracy with the tanh function was 88.873\%. <./images/7bgraph.png
+> <./images/7cchange.png>]
+<images/7dchange.png, id=86, 268.75406pt x 112.92188pt>
+File: images/7dchange.png Graphic file (type png)
+<use images/7dchange.png>
+Package pdftex.def Info: images/7dchange.png  used on input line 472.
+(pdftex.def)             Requested size: 252.94499pt x 106.27924pt.
+<images/7dgraph.png, id=87, 299.61937pt x 217.5628pt>
+File: images/7dgraph.png Graphic file (type png)
+<use images/7dgraph.png>
+Package pdftex.def Info: images/7dgraph.png  used on input line 478.
+(pdftex.def)             Requested size: 252.94499pt x 183.6744pt.
+<images/7echange.png, id=88, 416.30531pt x 18.82031pt>
+File: images/7echange.png Graphic file (type png)
+<use images/7echange.png>
+Package pdftex.def Info: images/7echange.png  used on input line 487.
+(pdftex.def)             Requested size: 252.94499pt x 11.43527pt.
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.490 		\end{figure}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.490 		\end{figure}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.490 		\end{figure}
+                     <./images/7cgraph.png> <./images/7dchange.png> <./images/7
+dgraph.png>]
+<images/7egraph.png, id=100, 299.61937pt x 209.28188pt>
+File: images/7egraph.png Graphic file (type png)
+<use images/7egraph.png>
+Package pdftex.def Info: images/7egraph.png  used on input line 493.
+(pdftex.def)             Requested size: 252.94499pt x 176.68332pt.
+<images/7fchange.png, id=101, 195.73125pt x 21.07875pt>
+File: images/7fchange.png Graphic file (type png)
+<use images/7fchange.png>
+Package pdftex.def Info: images/7fchange.png  used on input line 502.
+(pdftex.def)             Requested size: 252.94499pt x 27.24184pt.
+<images/7fgraph.png, id=102, 304.13625pt x 219.82124pt>
+File: images/7fgraph.png Graphic file (type png)
+<use images/7fgraph.png>
+Package pdftex.def Info: images/7fgraph.png  used on input line 508.
+(pdftex.def)             Requested size: 252.94499pt x 182.82724pt.
+<images/7fchange1.png, id=103, 194.97844pt x 18.82031pt>
+File: images/7fchange1.png Graphic file (type png)
+<use images/7fchange1.png>
+Package pdftex.def Info: images/7fchange1.png  used on input line 514.
+(pdftex.def)             Requested size: 252.94499pt x 24.41641pt.
+<images/7fgraph1.png, id=104, 306.39468pt x 210.7875pt>
+File: images/7fgraph1.png Graphic file (type png)
+<use images/7fgraph1.png>
+Package pdftex.def Info: images/7fgraph1.png  used on input line 520.
+(pdftex.def)             Requested size: 252.94499pt x 174.01762pt.
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.523 		\end{figure}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.523 		\end{figure}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.523 		\end{figure}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.523 		\end{figure}
+                     <./images/7echange.png> <./images/7egraph.png> <./images/7
+fchange.png> <./images/7fgraph.png>] [10pdfTeX warning (ext4): destination with
+ the same identifier (name{figure.14}) has been already used, duplicate ignored
+
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.531 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.531 \end{document}
+                     <./images/7fchange1.png> <./images/7fgraph1.png>]
+(./ML HW6.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `"ML HW6".out' has not changed.
-(rerunfilecheck)             Checksum: 9534070C232AA0A3F935CB7C3E3F8D46;35.
+(rerunfilecheck)             Checksum: C4A78932A39E3CA429CA63F6CA31738E;70.
  ) 
 Here is how much of TeX's memory you used:
- 31201 strings out of 479302
- 670833 string characters out of 5871205
- 1122964 words of memory out of 5000000
- 47897 multiletter control sequences out of 15000+600000
- 410248 words of font info for 54 fonts, out of 8000000 for 9000
+ 31383 strings out of 479302
+ 673555 string characters out of 5871205
+ 1152964 words of memory out of 5000000
+ 48014 multiletter control sequences out of 15000+600000
+ 417956 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,6n,89p,1584b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
-<d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on "ML HW6.pdf" (1 page, 278301 bytes).
+ 87i,15n,89p,1584b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<d:/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2020/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
+pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2020/texmf-dis
+t/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "ML HW6.pdf" (10 pages, 449312 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 177 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 104 words of extra memory for PDF output out of 10000 (max. 10000000)
 
