@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[top=0.75in, bottom=0.75in, left=0.75in, right=0.75in, headheight=15pt]{geometry}
-\usepackage{amsmath, amssymb, amsthm, graphicx, hyperref, enumerate, multirow,  multicol, tikz, centernot, cancel, forest, lipsum, mathtools, bm, esvect, fancyhdr, esdiff, float, parskip, comment}
+\usepackage{amsmath, amssymb, amsthm, graphicx, hyperref, enumerate, multirow,  multicol, tikz, centernot, cancel, forest, lipsum, mathtools, bm, esvect, fancyhdr, esdiff, float, parskip, comment, enumitem}
 
 \DeclareMathSymbol{*}{\mathbin}{symbols}{"01} % change * to /cdot inside math
 % \begingroup % let only this align, etc. break across pages
@@ -32,14 +32,13 @@
 \begin{document}
 \maketitle
 
-\section{}
-asdf
-\begin{figure*}
-	\centering
-	\caption{}
-	\label{fig:annotation-2021-04-22-184936}
-	\includegraphics[width=0.7\linewidth]{"../../../../Annotation 2021-04-22 184936"}
-\end{figure*}
+\section{} % Q
+\begin{enumerate}[label=(G\arabic*)]
+	\item a
+		\begin{enumerate}[label=(a)]
+			\item a
+		\end{enumerate}
+\end{enumerate}
 
 
 \end{document}
