@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  26 APR 2021 23:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.9)  28 APR 2021 22:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -898,16 +898,7 @@ Package: parskip 2020-06-15 v2.0f non-zero parskip adjustments
 (d:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write5
 
-Excluding comment 'comment')
-(d:/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip73
-\enit@outerparindent=\dimen294
-\enit@toks=\toks59
-\enit@inbox=\box131
-\enit@count@id=\count343
-\enitdp@description=\count344
-) (./LA HW 3.aux)
+Excluding comment 'comment') (./LA HW 3.aux)
 \openout1 = `"LA HW 3.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -965,17 +956,17 @@ LaTeX Font Info:    ... okay on input line 32.
 
 (d:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count345
-\scratchdimen=\dimen295
-\scratchbox=\box132
-\nofMPsegments=\count346
-\nofMParguments=\count347
-\everyMPshowfont=\toks60
-\MPscratchCnt=\count348
-\MPscratchDim=\dimen296
-\MPnumerator=\count349
-\makeMPintoPDFobject=\count350
-\everyMPtoPDFconversion=\toks61
+\scratchcounter=\count343
+\scratchdimen=\dimen294
+\scratchbox=\box131
+\nofMPsegments=\count344
+\nofMParguments=\count345
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count346
+\MPscratchDim=\dimen295
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
+\everyMPtoPDFconversion=\toks60
 ) (d:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -996,7 +987,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (d:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count351
+\c@section@level=\count349
 )
 LaTeX Info: Redefining \ref on input line 32.
 LaTeX Info: Redefining \pageref on input line 32.
@@ -1025,24 +1016,46 @@ LaTeX Font Info:    Trying to load font information for U+esvect on input line
 File: uesvect.fd 
 ) [1
 
-{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./LA HW 3.aux)
+{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+ [6]
+<images/4c.png, id=101, 361.35pt x 216.05719pt>
+File: images/4c.png Graphic file (type png)
+<use images/4c.png>
+Package pdftex.def Info: images/4c.png  used on input line 355.
+(pdftex.def)             Requested size: 505.89pt x 302.48126pt.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.361 \newpage
+               <./images/4c.png>] [8] [9] (./LA HW 3.aux)
 Package rerunfilecheck Info: File `"LA HW 3".out' has not changed.
-(rerunfilecheck)             Checksum: 9534070C232AA0A3F935CB7C3E3F8D46;35.
+(rerunfilecheck)             Checksum: 3DC43373EC07B03296A6788CDFF2BB59;210.
  ) 
 Here is how much of TeX's memory you used:
- 31507 strings out of 479302
- 676077 string characters out of 5871205
- 1121983 words of memory out of 5000000
- 48203 multiletter control sequences out of 15000+600000
- 410248 words of font info for 54 fonts, out of 8000000 for 9000
+ 31319 strings out of 479302
+ 671896 string characters out of 5871205
+ 1143965 words of memory out of 5000000
+ 47942 multiletter control sequences out of 15000+600000
+ 419265 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,6n,89p,1585b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,12n,89p,1585b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on "LA HW 3.pdf" (1 page, 19461 bytes).
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><d:/texlive/2020/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2020/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2020/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr17.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d
+:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2
+020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2020/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/texlive/2020/texmf-dist/font
+s/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on "LA HW 3.pdf" (9 pages, 139344 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
